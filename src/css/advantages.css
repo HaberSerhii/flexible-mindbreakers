@@ -1,28 +1,16 @@
-.u-vh {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
-  margin: -1px;
-}
-.container {
+.advantage-container {
   max-width: 375px;
   padding: 20px;
   background-color: #1e1823;
 }
 @media only screen and (min-width: 768px) {
-  .container {
+  .advantage-container {
     max-width: 768px;
     padding: 50px 32px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .container {
+  .advantage-container {
     max-width: 1200px;
     padding: 50px;
   }
