@@ -74,3 +74,28 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.title-second {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+}
+
+.title-third {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.paragraph {
+  letter-spacing: -0.02em;
+}
+
+.light {
+  color: #ffffff;
+}
+
+.dark {
+  color: #111111;
+}
