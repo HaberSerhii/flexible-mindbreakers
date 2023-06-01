@@ -1,0 +1,26 @@
+/* SECTION OUR PRODUCTS */
+.our-product {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background-color: var(--white-color);
+}
+/* SECTION OUR PRODUCTS */
+
+/* TITEL OUR PRODUCTS */
+.titel-product {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  text-align: center;
+
+  color: var(--black-color);
+}
+
+.yellow-titel-product {
+  color: var(--orange-color);
+}
+
+/* TITEL OUR PRODUCTS */
