@@ -1,0 +1,69 @@
+/**
+  |============================
+  | HERO SECTION
+  |============================
+*/
+.hero-uppertitle {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: #020101; /* временно цвет из белого поменян на черный */
+}
+.hero-button-list-button {
+  height: 45px;
+  width: 144px;
+  background-color: #fd9222;
+  border-radius: 100px;
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #ffffff;
+  border: none;
+  transition: background-color 300ms, color 300ms;
+}
+.hero-button-list-button:hover,
+.hero-button-list-button:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+
+.hero-button-list-item {
+  display: flex;
+
+  width: 159px;
+  height: 41px;
+  border: 1px solid #030303; /* временно цвет из белого поменян на черный */
+  border-radius: 100px;
+  transition: border 300ms;
+}
+.hero-button-list-button-link {
+  text-align: center;
+  width: 159px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  border-radius: 100px;
+  color: #070606; /* временно цвет из белого поменян на черный */
+  padding: 12px 28px;
+  transition: color 300ms;
+  color: white;
+}
+.hero-button-list-button-link:hover,
+.hero-button-list-button-link:focus {
+  color: #fd9222;
+}
+.hero-button-list-item:hover,
+.hero-button-list-item:focus {
+  border: 1px solid #fd9222;
+}
+
+.hero-scroll-down-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.03em;
+  color: #000000; /* временно цвет из белого поменян на черный */
+}
