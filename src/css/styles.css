@@ -25,6 +25,16 @@
   --dark-violet-color: #1e1823;
   --orange-color: #fd9222;
   --white-color: #fafafa;
+  --background-color: #e2e2e2;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--black-color);
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
 }
 
 .container {
@@ -63,4 +73,29 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.title-second {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+}
+
+.title-third {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.paragraph {
+  letter-spacing: -0.02em;
+}
+
+.light {
+  color: #ffffff;
+}
+
+.dark {
+  color: #111111;
 }
