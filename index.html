@@ -26,7 +26,7 @@
     
     <link rel="icon" href="data:;base64,=" />
     <script type="module" crossorigin src="/flexible-mindbreakers/assets/index-62377117.js"></script>
-    <link rel="stylesheet" href="/flexible-mindbreakers/assets/index-c7be7a34.css">
+    <link rel="stylesheet" href="/flexible-mindbreakers/assets/index-4d0228a5.css">
   </head>
   <body>
     <header class="header">
@@ -128,7 +128,7 @@
   </p>
   <div class="hero-buttons-div">
     <ul class="hero-button-list list">
-      <li class="hero-button-list-item">
+      <li class="hero-button-list-item-one">
         <button class="hero-button-list-button" type="button">Buy now</button>
       </li>
       <li class="hero-button-list-item">
@@ -143,11 +143,13 @@
     </ul>
 
     <div class="hero-scroll-down-div">
-      <p class="hero-scroll-down-text">scroll down</p>
+      <a href="../partials/footer.html" class="hero-scroll-down-text"
+        >scroll down</a
+      >
       <!-- кнопку якоря на текущей странице придеться сделать с помощью js -->
       <a href="../partials/footer.html" class="hero-scroll-down-link link">
-        <svg class="hero-scroll-down-icon" width="22" height="22">
-          <use href=""></use>
+        <svg class="hero-scroll-down-icon" width="28" height="28">
+          <use href="../img/sprite.svg#icon-2"></use>
         </svg>
       </a>
     </div>
@@ -156,22 +158,24 @@
 
 <!-- MODAL BUY NOW -->
 
-<div class="container">
-  <strong>BUY NOW</strong>
-  <ul>
-    <li>
-      <div>
-        <p>100 g</p>
+<div class="modal-buy-now-cont container">
+  <strong class="modal-buy-now-title"
+    ><span class="modal-buy-now-title-word">BUY </span>NOW</strong
+  >
+  <ul class="modal-buy-now-list list">
+    <li class="modal-buy-now-list-item">
+      <div class="modal-buy-now-list-item-div">
+        <p class="modal-buy-now-list-item-text">100 g</p>
       </div>
     </li>
-    <li>
-      <div>
-        <p>200 g</p>
+    <li class="modal-buy-now-list-item">
+      <div class="modal-buy-now-list-item-div">
+        <p class="modal-buy-now-list-item-text">200 g</p>
       </div>
     </li>
-    <li>
-      <div>
-        <p>300 g</p>
+    <li class="modal-buy-now-list-item">
+      <div class="modal-buy-now-list-item-div">
+        <p class="modal-buy-now-list-item-text">300 g</p>
       </div>
     </li>
   </ul>
@@ -211,7 +215,7 @@
         placeholder="Phone number"
       />
       <svg class="" width="32" height="32">
-        <use href=""></use>
+        <use href="../img/sprite.svg#icon-LeftIcon"></use>
       </svg>
       <p>+380</p>
     </div>
@@ -224,7 +228,7 @@
       placeholder="Enter card"
     />
     <svg class="" width="44" height="30">
-      <use href=""></use>
+      <use href="../img/sprite.svg#icon-Mastercard"></use>
     </svg>
     <label for="client-comment">Comment</label>
     <textarea
@@ -245,7 +249,7 @@
     <ul class="advantage-list">
       <li class="advantage-item">
         <svg class="advantage-icon" width="32" height="32">
-          <use href="/flexible-mindbreakers/assets/sprite-a4a535b4.svg#advantages-chocolate"></use>
+          <use href="/flexible-mindbreakers/assets/sprite-884f54ce.svg#advantages-chocolate"></use>
         </svg>
         <h2 class="advantage-title">Unsurpassed taste</h2>
         <p class="advantage-text">
@@ -257,7 +261,7 @@
       </li>
       <li class="advantage-item">
         <svg class="advantage-icon" width="32" height="32">
-          <use href="/flexible-mindbreakers/assets/sprite-a4a535b4.svg#advantages-coin"></use>
+          <use href="/flexible-mindbreakers/assets/sprite-884f54ce.svg#advantages-coin"></use>
         </svg>
         <h2 class="advantage-title">Affordable price</h2>
         <p class="advantage-text">
@@ -270,7 +274,7 @@
       </li>
       <li class="advantage-item">
         <svg class="advantage-icon" width="32" height="32">
-          <use href="/flexible-mindbreakers/assets/sprite-a4a535b4.svg#advantages-spoon"></use>
+          <use href="/flexible-mindbreakers/assets/sprite-884f54ce.svg#advantages-spoon"></use>
         </svg>
         <h2 class="advantage-title">Own production</h2>
         <p class="advantage-text">
@@ -432,7 +436,7 @@
           aria-label="instagram icon"
         >
           <svg class="footer-social-icon" width="24" height="24">
-            <use href="/flexible-mindbreakers/assets/sprite-a4a535b4.svg#instagram-footer"></use>
+            <use href="/flexible-mindbreakers/assets/sprite-884f54ce.svg#instagram-footer"></use>
           </svg>
         </a>
       </li>
@@ -446,7 +450,7 @@
           aria-label="twitter icon"
         >
           <svg class="footer-social-icon" width="24" height="24">
-            <use href="/flexible-mindbreakers/assets/sprite-a4a535b4.svg#twitter-footer"></use>
+            <use href="/flexible-mindbreakers/assets/sprite-884f54ce.svg#twitter-footer"></use>
           </svg>
         </a>
       </li>
