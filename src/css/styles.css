@@ -25,6 +25,16 @@
   --dark-violet-color: #1e1823;
   --orange-color: #fd9222;
   --white-color: #fafafa;
+  --background-color: #e2e2e2;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--black-color);
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
 }
 
 .container {
