@@ -3,6 +3,11 @@
   gap: 18px;
 }
 
+.social-links-modal {
+  display: flex;
+  gap: 18px;
+}
+
 @media screen and (max-width: 1200px) {
   .list-nav-header,
   .social-links-header {
