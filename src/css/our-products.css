@@ -5,6 +5,8 @@
   background-color: var(--white-color);
 }
 /* SECTION OUR PRODUCTS */
+.our-product > .container {
+}
 
 /* TITEL OUR PRODUCTS */
 .titel-product {
