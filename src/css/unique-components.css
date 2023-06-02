@@ -41,9 +41,13 @@
   color: var(--orange-color);
 }
 .unique-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
   text-align: center;
+  order: 1;
   letter-spacing: -0.03em;
-  text-transform: capitalize;
 }
 @media only screen and (min-width: 768px) {
   .unique-text {
