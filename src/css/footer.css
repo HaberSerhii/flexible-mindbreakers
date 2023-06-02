@@ -157,8 +157,7 @@ footer {
   .footer-social-icon:focus {
     height: 24px;
     width: 24px;
-    /*stroke: var(--orange-color);*/
-    stroke: aquamarine;
+    stroke: var(--orange-color);
   }
 }
 
