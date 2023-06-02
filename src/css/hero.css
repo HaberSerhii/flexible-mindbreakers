@@ -4,9 +4,9 @@
   |============================
 */
 .hero-container {
-  padding: 395px 20px 20px 20px;
+  padding: 370px 20px 20px 20px;
   background-color: #fafafa;
-  width: 335px;
+  width: 320px;
   height: 620px;
   background: linear-gradient(
       180deg,
@@ -18,9 +18,19 @@
   background-position: center;
   background-size: cover;
   border-radius: 32px;
+  margin-bottom: 72px;
 }
+
+@media only screen and (min-width: 375px) {
+  .hero-container {
+    width: 335px;
+    padding: 395px 20px 20px 20px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .hero-container {
+    margin-bottom: 50px;
     padding: 671px 40px 40px 40px !important;
     width: 704px;
     height: 890px;
@@ -34,6 +44,7 @@
 }
 @media only screen and (min-width: 1200px) {
   .hero-container {
+    margin-bottom: 72px;
     padding: 381px 40px 40px 40px !important;
     width: 1136px;
     height: 600px;
@@ -55,12 +66,19 @@
 }
 
 .hero-uppertitle {
-  width: 299px;
+  width: 280px;
   color: #ffffff;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
 }
+
+@media only screen and (min-width: 375px) {
+  .hero-uppertitle {
+    width: 299px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .hero-uppertitle {
     width: 484px;
@@ -133,12 +151,19 @@
 
 .hero-button-list-item {
   display: flex;
-  width: 159px;
+  width: 130px;
   height: 41px;
   border: 1px solid #ffffff;
   border-radius: 100px;
   transition: border 300ms;
 }
+
+@media only screen and (min-width: 375px) {
+  .hero-button-list-item {
+    width: 159px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .hero-button-list-item {
     width: 183px;
@@ -155,9 +180,15 @@
   line-height: 1.21;
   border-radius: 100px;
   border-color: #ffffff;
-  padding: 12px 27px;
+  padding: 12px 9px;
   transition: color 300ms;
   color: #ffffff;
+}
+
+@media only screen and (min-width: 375px) {
+  .hero-button-list-button-link {
+    padding: 12px 27px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .hero-button-list-button-link {
@@ -209,6 +240,7 @@
 */
 
 .backdrop-modal-buy-now {
+  z-index: 999;
   background: rgba(46, 47, 66, 0.4);
   position: fixed;
   left: 0px;
@@ -344,4 +376,87 @@
   font-size: 14px;
   line-height: 1.21;
   color: #111111;
+}
+
+.mobal-buy-now-form {
+  margin-top: 32px;
+}
+
+.modal-buy-now-labels {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+  display: block;
+
+  color: #000000;
+}
+.form-buy-now-field-personal {
+  display: block;
+  width: 263px;
+  height: 45px;
+  border: 1px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  padding: 14px 18px;
+  background-color: #fafafa;
+}
+.form-buy-now-field-personal:not(:first-child) {
+  margin-bottom: 18px;
+}
+.modal-buy-now-name-and-surname {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-buy-now-field-personal::placeholder {
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.4);
+}
+
+.form-buy-now-field-phone-div {
+  position: relative;
+}
+
+.icon-leftIcon {
+  position: absolute;
+  top: 10px;
+  left: 18px;
+}
+
+.form-buy-now-field-card-div {
+  position: relative;
+}
+
+.form-buy-now-field-card {
+  margin-bottom: 18px;
+}
+
+.icon-mastercard {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+}
+
+.form-buy-now-field-phone-text-number {
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.form-buy-now-field-phone {
+  margin-bottom: 18px;
+  padding-left: 95px;
+}
+.form-buy-now-field-phone::placeholder {
 }
