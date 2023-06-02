@@ -1,4 +1,21 @@
+.unique-title-container {
+  max-width: 335px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 768px) {
+  .unique-title-container {
+    gap: 28px;
+  }
+}
 .unique-title {
+  padding-top: 72px;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 600;
@@ -8,7 +25,17 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--black-color);
-  margin-bottom: 24px;
+  max-width: 283px;
+}
+@media only screen and (min-width: 768px) {
+  .unique-title {
+    max-width: 411px;
+    line-height: 1.17;
+    font-size: 24px;
+  }
+  .unique-title-container {
+    max-width: 486px;
+  }
 }
 .taste {
   color: var(--orange-color);
@@ -16,16 +43,43 @@
 .unique-text {
   text-align: center;
   letter-spacing: -0.03em;
+  text-transform: capitalize;
+}
+@media only screen and (min-width: 768px) {
+  .unique-text {
+    max-width: 486px;
+  }
 }
 .unique-list {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
+@media only screen and (min-width: 768px) {
+  .unique-list {
+    flex-direction: row;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .unique-list {
+    gap: 19px;
+    flex-wrap: nowrap;
+  }
+}
+.unique-item {
+  background-color: #fd9222;
+  padding: 28px;
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+}
 .thumb-card {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
+
 .overlay-card {
   position: absolute;
   top: 0;
