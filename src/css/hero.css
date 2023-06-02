@@ -4,33 +4,104 @@
   |============================
 */
 .hero-container {
+  padding: 395px 20px 20px 20px;
+  background-color: #fafafa;
   width: 335px;
-  min-height: 620px;
+  height: 620px;
+  background: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(../img/hero-and-buynow-imgs/background-img-mobile-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 32px;
 }
 @media only screen and (min-width: 768px) {
   .hero-container {
+    padding: 671px 40px 40px 40px;
     width: 704px;
-    min-height: 890px;
+    height: 890px;
+    background: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../img/hero-and-buynow-imgs/tablet-background-img-1x.jpg);
   }
 }
 @media only screen and (min-width: 1200px) {
   .hero-container {
+    padding: 381px 40px 40px 40px;
     width: 1136px;
-    min-height: 600px;
+    height: 600px;
+    background: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../img/hero-and-buynow-imgs/background-image-desktop-1x.jpg);
+  }
+}
+
+.hero-content {
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-content {
   }
 }
 
 .hero-uppertitle {
-  color: #020101; /* временно цвет из белого поменян на черный */
+  width: 299px;
+  color: #ffffff;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
 }
 @media only screen and (min-width: 768px) {
   .hero-uppertitle {
+    width: 484px;
     font-size: 28px;
     line-height: 1.21;
     letter-spacing: -0.03em;
+  }
+}
+
+.hero-buttons-div {
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-buttons-div {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.hero-button-list {
+  margin-top: 32px;
+  display: flex;
+  gap: 14px;
+}
+
+.hero-scroll-down-div {
+  margin-top: 32px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-scroll-down-div {
+    margin-left: 153px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-scroll-down-div {
+    margin-left: 583px;
   }
 }
 
@@ -64,7 +135,7 @@
   display: flex;
   width: 159px;
   height: 41px;
-  border: 1px solid #030303; /* временно цвет из белого поменян на черный */
+  border: 1px solid #ffffff;
   border-radius: 100px;
   transition: border 300ms;
 }
@@ -83,10 +154,10 @@
   font-size: 14px;
   line-height: 1.21;
   border-radius: 100px;
-  border-color: #070606; /* временно цвет из белого поменян на черный */
+  border-color: #ffffff;
   padding: 12px 27px;
   transition: color 300ms;
-  color: #070606; /* временно цвет из белого поменян на черный */
+  color: #ffffff;
 }
 @media only screen and (min-width: 768px) {
   .hero-button-list-button-link {
@@ -110,7 +181,7 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: -0.03em;
-  color: #000000; /* временно цвет из белого поменян на черный */
+  color: #ffffff;
 }
 @media only screen and (min-width: 768px) {
   .hero-scroll-down-text {
