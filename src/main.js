@@ -12,3 +12,7 @@
     refs.menu.classList.toggle('is-open');
   }
 })();
+
+
+// Modal Buy-now
+import "./js/buy-now-modal"
