@@ -21,7 +21,7 @@
 }
 @media only screen and (min-width: 768px) {
   .hero-container {
-    padding: 671px 40px 40px 40px;
+    padding: 671px 40px 40px 40px !important;
     width: 704px;
     height: 890px;
     background: linear-gradient(
@@ -34,7 +34,7 @@
 }
 @media only screen and (min-width: 1200px) {
   .hero-container {
-    padding: 381px 40px 40px 40px;
+    padding: 381px 40px 40px 40px !important;
     width: 1136px;
     height: 600px;
     background: linear-gradient(
@@ -208,11 +208,38 @@
   |============================
 */
 
+.backdrop-modal-buy-now {
+  background: rgba(46, 47, 66, 0.4);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-modal-buy-now.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-buy-close-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border-radius: 50%; /*убрать когда добавлю иконку */
+}
+
 .modal-buy-now-cont {
+  margin: 0 auto;
+  position: relative;
   width: 311px;
   min-height: 994px;
   background: #fafafa;
   border-radius: 15px;
+  padding: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -221,6 +248,11 @@
     min-height: 1058px;
   }
 }
+
+.modal-buy-now-content {
+  padding: 32px 24px 32px 24px;
+}
+
 .modal-buy-now-title {
   display: block;
   margin: 0 auto 32px auto;
@@ -243,12 +275,6 @@
   }
 }
 
-.modal-buy-now-cont {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  background-color: #e2e2e2;
-}
-
 .modal-buy-now-list {
   display: flex;
   flex-wrap: nowrap;
@@ -261,6 +287,19 @@
   .modal-buy-now-list {
     flex-wrap: wrap;
     flex-direction: row;
+  }
+}
+
+.modal-buy-now-list-item-img-and-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 77px;
+}
+@media only screen and (min-width: 768px) {
+  .modal-buy-now-list-item-img-and-text {
+    flex-direction: column;
+    gap: 14px;
   }
 }
 
