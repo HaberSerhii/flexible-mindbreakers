@@ -1,3 +1,16 @@
+.advantage-section {
+  margin-bottom: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .advantage-section {
+    margin-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .advantage-section {
+    margin-bottom: 128px;
+  }
+}
 .advantage-container {
   padding-top: 20px;
   padding-bottom: 20px;
