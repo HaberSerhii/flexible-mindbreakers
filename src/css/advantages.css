@@ -1,7 +1,7 @@
 .advantage-container {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: var(--dark-violet-color) !important;
+  background-color: var(--dark-violet-color);
 }
 @media only screen and (min-width: 768px) {
   .advantage-container {
@@ -11,7 +11,8 @@
 }
 @media only screen and (min-width: 1200px) {
   .advantage-container {
-    padding: 50px !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 .advantage-list {
@@ -29,6 +30,7 @@
 @media only screen and (min-width: 1200px) {
   .advantage-list {
     max-width: 1200px;
+    justify-content: center;
     flex-wrap: nowrap;
     gap: 70px;
   }
@@ -93,18 +95,10 @@
 .advantage-svg {
   width: 32px;
 }
-.advantage-title {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.22;
-  color: #ffffff;
-
+.title-third {
   margin-bottom: 18px;
 }
 .advantage-text {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.21;
-  letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
 }
