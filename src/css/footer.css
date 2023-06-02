@@ -1,0 +1,133 @@
+footer {
+  padding: 32px 0;
+  background-color: var(--dark-violet-color);
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    padding: 50px 0;
+  }
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+  }
+}
+.footer-span {
+  color: var(--orange-color);
+}
+
+.footer-text {
+  max-width: 251px;
+  margin-bottom: 34px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+}
+
+/*@media only screen and (min-width: 768px) {
+  .footer-nav {
+    display: flex;
+  }
+}*/
+
+.footer-contacts-social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-text {
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-address {
+  margin-bottom: 64px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+}
+
+.footer-item-tel {
+  margin-bottom: 4px;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-social-icon {
+  fill: var(--dark-violet-color);
+  stroke: #ffffff;
+  height: 22px;
+  width: 22px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.footer-nav::before {
+  content: '';
+  display: block;
+
+  width: 335px;
+  height: 0px;
+  left: 355px;
+  top: 224px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: translateY(-34px);
+  top: -1px;
+}
+
+.footer-nav-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  align-items: center;
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+}
