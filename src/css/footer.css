@@ -157,7 +157,8 @@ footer {
   .footer-social-icon:focus {
     height: 24px;
     width: 24px;
-    stroke: var(--orange-color);
+    /*stroke: var(--orange-color);*/
+    stroke: aquamarine;
   }
 }
 
@@ -186,33 +187,6 @@ footer {
     gap: 24px;
   }
 }
-
-/*@media only screen and (max-width: 767px) {
-  .footer-nav::before {
-    content: '';
-    display: block;
-
-    width: 100%;
-    height: 0px;
-
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transform: translateY(-34px);
-    top: -1px;
-  }
-}*/
-
-/*@media only screen and (min-width: 768px) {
-  .footer-nav::before {
-    content: '';
-    display: block;
-
-    top: 224px;
-
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transform: translateY(-24px);
-    top: -1px;
-  }
-}*/
 
 .footer-nav-item {
   font-style: normal;
