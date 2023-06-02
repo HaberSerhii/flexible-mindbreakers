@@ -30,7 +30,7 @@
     
     <link rel="icon" href="data:;base64,=" />
     <script type="module" crossorigin src="/flexible-mindbreakers/assets/index-e5907886.js"></script>
-    <link rel="stylesheet" href="/flexible-mindbreakers/assets/index-2e72a28b.css">
+    <link rel="stylesheet" href="/flexible-mindbreakers/assets/index-3c96ca4e.css">
   </head>
   <body>
     <header class="header">
@@ -120,54 +120,46 @@
     </header>
     <main class="main">
       <!-- Section HERO -->
-<div class="">
-  <div class="hero-container container">
-    <div class="hero-content">
-      <h1 class="hero-title visually-hidden">
-        Treat yourself or a loved one to our finest ingredients for a moment of
-        pure delight!
-      </h1>
-      <h2 class="hero-uppertitle">
-        Treat yourself or a loved one to our finest ingredients for a moment of
-        pure delight!
-      </h2>
-      <div class="hero-buttons-div">
-        <ul class="hero-button-list list">
-          <li class="hero-button-list-item-one">
-            <button
-              data-modal-open
-              class="hero-button-list-button"
-              type="button"
-            >
-              Buy now
-            </button>
-          </li>
-          <li class="hero-button-list-item">
-            <!-- кнопку якоря на текущей странице придеться сделать с помощью js -->
-            <a
-              class="hero-button-list-button-link link"
-              href="../partials/how-its-made.html"
-            >
-              How it’s made
-            </a>
-          </li>
-        </ul>
-
-        <div class="hero-scroll-down-div">
-          <a href="../partials/footer.html" class="hero-scroll-down-text"
-            >scroll down</a
-          >
+<section class="hero-container container" id="hero-section">
+  <div class="hero-content">
+    <h1 class="hero-title visually-hidden">
+      Treat yourself or a loved one to our finest ingredients for a moment of
+      pure delight!
+    </h1>
+    <h2 class="hero-uppertitle">
+      Treat yourself or a loved one to our finest ingredients for a moment of
+      pure delight!
+    </h2>
+    <div class="hero-buttons-div">
+      <ul class="hero-button-list list">
+        <li class="hero-button-list-item-one">
+          <button data-modal-open class="hero-button-list-button" type="button">
+            Buy now
+          </button>
+        </li>
+        <li class="hero-button-list-item">
           <!-- кнопку якоря на текущей странице придеться сделать с помощью js -->
-          <a href="../partials/footer.html" class="hero-scroll-down-link link">
-            <svg class="hero-scroll-down-icon" width="28" height="28">
-              <use href="../img/sprite.svg#icon-2"></use>
-            </svg>
+          <a
+            class="hero-button-list-button-link link"
+            href="../partials/how-its-made.html"
+          >
+            How it’s made
           </a>
-        </div>
+        </li>
+      </ul>
+
+      <div class="hero-scroll-down-div">
+        <a href="#footer-page" class="hero-scroll-down-text">scroll down</a>
+        <!-- кнопку якоря на текущей странице придеться сделать с помощью js -->
+        <a href="#footer-page" class="hero-scroll-down-link link">
+          <svg class="hero-scroll-down-icon" width="28" height="28">
+            <use href="../img/sprite.svg#icon-2"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </div>
-</div>
+</section>
 <!-- MODAL BUY NOW -->
 <div class="backdrop-modal-buy-now is-hidden" data-modal>
   <div class="modal-buy-now-cont">
@@ -230,57 +222,66 @@
         </li>
       </ul>
 
-      <form>
-        <label for="personal-inf">Personal information</label>
-        <input
-          type="text"
-          name="personal-inf"
-          class="form-buy-now-field-personal"
-          id="personal-inf"
-          placeholder="Name"
-        />
-        <input
-          type="text"
-          name="personal-inf"
-          class="form-buy-now-field-personal"
-          id="personal-inf-two"
-          placeholder="Surname"
-        />
-
-        <label for="personal-email">Email</label>
+      <form class="mobal-buy-now-form">
+        <label class="modal-buy-now-labels" for="personal-inf"
+          >Personal information</label
+        >
+        <div class="modal-buy-now-name-and-surname">
+          <input
+            type="text"
+            name="personal-inf"
+            class="form-buy-now-field-personal"
+            id="personal-inf"
+            placeholder="Name"
+          />
+          <input
+            type="text"
+            name="personal-inf"
+            class="form-buy-now-field-personal"
+            id="personal-inf-two"
+            placeholder="Surname"
+          />
+        </div>
+        <label class="modal-buy-now-labels" for="personal-email">Email</label>
         <input
           type="email"
           name="personal-email"
-          class="form-buy-now-field-email"
+          class="form-buy-now-field-email form-buy-now-field-personal"
           id="personal-email"
           placeholder="Enter your email"
         />
-        <label for="personal-tell">Phone number</label>
-        <div>
+        <label class="modal-buy-now-labels" for="personal-tell"
+          >Phone number</label
+        >
+        <div class="form-buy-now-field-phone-div">
           <input
             type="tel"
             name="personal-tell"
-            class="form-buy-now-field-phone"
+            class="form-buy-now-field-phone form-buy-now-field-personal"
             id="personal-tell"
             placeholder="Phone number"
           />
-          <svg class="" width="32" height="32">
+          <svg class="icon-leftIcon" width="24" height="24">
             <use href="../img/sprite.svg#icon-LeftIcon"></use>
           </svg>
-          <p>+380</p>
+          <p class="form-buy-now-field-phone-text-number">+380</p>
         </div>
-        <label for="personal-card">Card number</label>
-        <input
-          type="text"
-          name="personal-card"
-          class="form-buy-now-field-card"
-          id="personal-card"
-          placeholder="Enter card"
-        />
-        <svg class="" width="44" height="30">
-          <use href="../img/sprite.svg#icon-Mastercard"></use>
-        </svg>
-        <label for="client-comment">Comment</label>
+        <label class="modal-buy-now-labels" for="personal-card"
+          >Card number</label
+        >
+        <div class="form-buy-now-field-card-div">
+          <input
+            type="text"
+            name="personal-card"
+            class="form-buy-now-field-card form-buy-now-field-personal"
+            id="personal-card"
+            placeholder="Enter card"
+          />
+          <svg class="icon-mastercard" width="32" height="21">
+            <use href="../img/sprite.svg#icon-Mastercard"></use>
+          </svg>
+        </div>
+        <label class="modal-buy-now-labels" for="client-comment">Comment</label>
         <textarea
           name="client-comment"
           class="form-buy-now-field-comment"
