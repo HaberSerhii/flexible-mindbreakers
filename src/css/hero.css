@@ -249,6 +249,12 @@
   height: 100%;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+}
+@media only screen and (min-width: 375px) {
+  .backdrop-modal-buy-now {
+    max-height: calc(100vh);
+  }
 }
 
 .backdrop-modal-buy-now.is-hidden {
@@ -258,12 +264,24 @@
 }
 
 .modal-buy-close-button {
+  width: 22px;
+  height: 22px;
+  border: none;
+  padding: 0;
   position: absolute;
   top: 16px;
   right: 16px;
-  border-radius: 50%; /*убрать когда добавлю иконку */
+  border-radius: 50%;
+  background-color: transparent;
 }
-
+@media only screen and (min-width: 768px) {
+  modal-buy-close-button {
+    width: 26px;
+    height: 26px;
+    top: 20px;
+    right: 20px;
+  }
+}
 .modal-buy-now-cont {
   margin: 0 auto;
   position: relative;
@@ -283,6 +301,12 @@
 
 .modal-buy-now-content {
   padding: 32px 24px 32px 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-buy-now-content {
+    padding: 48px;
+  }
 }
 
 .modal-buy-now-title {
@@ -381,6 +405,11 @@
 .mobal-buy-now-form {
   margin-top: 32px;
 }
+@media only screen and (min-width: 768px) {
+  .mobal-buy-now-form {
+    margin-top: 40px;
+  }
+}
 
 .modal-buy-now-labels {
   font-weight: 500;
@@ -389,8 +418,14 @@
   letter-spacing: -0.02em;
   margin-bottom: 8px;
   display: block;
-
   color: #000000;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-buy-now-labels {
+    font-size: 14px;
+    line-height: 1.28;
+  }
 }
 .form-buy-now-field-personal {
   display: block;
@@ -401,7 +436,13 @@
   border-radius: 8px;
   padding: 14px 18px;
   background-color: #fafafa;
+  outline: none;
+  transition: border 300ms;
 }
+.form-buy-now-field-personal:focus {
+  border: 1px solid rgb(253, 146, 34);
+}
+
 .form-buy-now-field-personal:not(:first-child) {
   margin-bottom: 18px;
 }
@@ -410,12 +451,32 @@
   flex-direction: column;
   gap: 14px;
 }
+@media only screen and (min-width: 768px) {
+  .modal-buy-now-name-and-surname {
+    flex-direction: row;
+    gap: 21px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .form-buy-now-field-personal-ns {
+    width: 246px;
+    height: 66px;
+  }
+}
 
 .form-buy-now-field-personal::placeholder {
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.4);
+}
+
+@media only screen and (min-width: 768px) {
+  .form-buy-now-field-personal::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
 
 .form-buy-now-field-phone-div {
@@ -436,10 +497,33 @@
   margin-bottom: 18px;
 }
 
+@media only screen and (min-width: 768px) {
+  .form-buy-now-field-card {
+    width: 513px;
+    height: 66px;
+  }
+}
+
 .icon-mastercard {
   position: absolute;
   top: 12px;
   right: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+  .icon-mastercard {
+    width: 44px;
+    height: 30px;
+    top: 18px;
+    right: 24px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .form-buy-now-field-email {
+    width: 513px;
+    height: 66px;
+  }
 }
 
 .form-buy-now-field-phone-text-number {
@@ -454,9 +538,139 @@
   color: #000000;
 }
 
+.form-buy-now-field-phone-text-number::after {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  content: '';
+  display: block;
+  width: 25px;
+  height: 1px;
+  border: 0.5px solid #e2e2e2;
+  transform: rotate(90deg);
+}
+
+@media only screen and (min-width: 768px) {
+  .form-buy-now-field-phone-text-number::after {
+    left: 60px;
+    width: 32px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .form-buy-now-field-phone-text-number {
+    left: 74px;
+    top: 23px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
 .form-buy-now-field-phone {
   margin-bottom: 18px;
-  padding-left: 95px;
+  padding-left: 106px;
 }
-.form-buy-now-field-phone::placeholder {
+@media only screen and (min-width: 768px) {
+  .form-buy-now-field-phone {
+    padding-left: 180px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .form-buy-now-field-phone {
+    width: 513px;
+    height: 66px;
+  }
+}
+
+.form-buy-now-field-comment {
+  display: block;
+  width: 263px;
+  height: 91px;
+  border: 1px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  padding: 14px 18px;
+  background-color: #fafafa;
+  resize: none;
+  outline: none;
+  transition: border 300ms;
+}
+
+.form-buy-now-field-comment:focus {
+  border: 1px solid rgb(253, 146, 34);
+}
+
+@media only screen and (min-width: 768px) {
+  .form-buy-now-field-comment {
+    width: 513px;
+    height: 137px;
+  }
+}
+
+.form-buy-now-field-comment::placeholder {
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.4);
+}
+
+@media only screen and (min-width: 768px) {
+  .form-buy-now-field-comment::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+.modal-buy-now-sumbit-button {
+  margin-top: 30px;
+  border: none;
+  background-color: #fd9222;
+  border-radius: 100px;
+  width: 109px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.16;
+  color: #ffffff;
+  transition: background-color 300ms, color 300ms;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-buy-now-sumbit-button {
+    width: 133px;
+    height: 45px;
+    margin-top: 18px;
+  }
+}
+
+.modal-buy-now-sumbit-button:hover,
+.modal-buy-now-sumbit-button:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+
+.modal-buy-close-icon {
+  fill: rgb(46, 47, 66);
+  transition: fill 300ms;
+}
+
+.modal-buy-close-button:hover > .modal-buy-close-icon {
+  fill: #fd9222;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-buy-close-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .icon-leftIcon {
+    top: 17px;
+    left: 24px;
+    width: 32px;
+    height: 32px;
+  }
 }
