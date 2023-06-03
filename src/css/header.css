@@ -8,6 +8,17 @@
   gap: 18px;
 }
 
+.logo-header {
+  margin-right: 4px;
+
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  color: #111111;
+}
+
 @media screen and (max-width: 1200px) {
   .list-nav-header,
   .social-links-header {
@@ -53,7 +64,6 @@
   .logo-header {
     font-size: 18px;
     line-height: 20px;
-    margin-bottom: ;
   }
 
   .svg-logo-header {
@@ -64,7 +74,14 @@
 
   .adress-svg-header {
     stroke: #111111;
-    fill: #ffffff;
+    fill: #e2e2e2;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    height: 24px;
+    width: 24px;
+  }
+
+  .adress-svg-header:hover,.adress-svg-header:focus {
+    stroke: #fd9222;
   }
 
   .nav-header {
@@ -102,17 +119,6 @@
   margin-bottom: auto;
 }
 
-.logo-header {
-  margin-right: 4px;
-
-  font-style: italic;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: -0.03em;
-  color: #111111;
-}
-
 .nav-header {
   display: flex;
 }
@@ -129,6 +135,7 @@
 
 .icon-open-modal-header {
   stroke: #111111;
+  background-color: #e2e2e2;
 }
 
 .backdrop-header-menu {
@@ -142,9 +149,9 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translateX(-100%);
-  transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic),
-    transform 250ms var(--cubic);
+  transform: translateX(100%);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #1e1823;
 }
 
