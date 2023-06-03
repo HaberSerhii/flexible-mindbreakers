@@ -1,14 +1,47 @@
-<section class="subscribe-section section">
+<section id="subscribe" class="subscribe-section section">
   <div class="container subscribe-container">
-    <h2 class="subscribe-title title-second">
-      EXPLORE OUR NEW CHOCOLATE FIRST
-    </h2>
+    <h2 class="subscribe-title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
     <p class="subscribe-describe paragraph">
       From the velvety texture to the rich and complex flavor, our New Chocolate
       is a true indulgence that will leave you craving more. Made with only the
       finest ingredients and handcrafted with the utmost care, each piece is a
       work of art that is sure to please.
     </p>
-    <button type="button" class="subscribe-btn">Subscribe</button>
+    <button data-new-chocolate-modal-open type="button" class="subscribe-btn">
+      Subscribe
+    </button>
   </div>
 </section>
+<!-- MODAL SUBSCRIBE -->
+<div class="backdrop-modal-subscribe is-hidden" data-new-chocolate-modal>
+  <div class="modal-subscribe">
+    <div class="background-img"></div>
+    <button
+      type="button"
+      class="modal-subscribe-close-btn"
+      data-new-chocolate-modal-close
+    >
+      <svg class="modal-buy-close-icon" width="24" height="24">
+        <use href="../img/sprite.svg#icon-button-close-modal-header"></use>
+      </svg>
+    </button>
+    <div class="subscribe-modal-field">
+      <h2 class="subscribe-title subscribe-title-dark">
+        EXPLORE OUR
+        <span class="subscribe-title-accent">NEW CHOCOLATE</span> FIRST!
+      </h2>
+      <form class="subscribe-form">
+        <input
+          type="email"
+          name="user_email"
+          class="subscribe-modal-form-input"
+          placeholder="Enter your email"
+          required
+        />
+        <button type="submit" class="subscribe-submit-btn subscribe-btn">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
