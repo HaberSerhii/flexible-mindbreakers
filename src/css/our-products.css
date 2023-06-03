@@ -57,7 +57,7 @@
 
 @media only screen and (min-width: 768px) {
   .our-product-slide {
-    width: 270px !important;
+    min-width: 270px !important;
     margin-bottom: 32px;
   }
 }
@@ -144,4 +144,11 @@
   width: 28px;
   height: 13px;
   border-radius: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .swiper-pagination-bullet {
+    min-width: 13px;
+    min-height: 13px;
+  }
 }
