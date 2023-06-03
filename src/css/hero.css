@@ -4,9 +4,11 @@
   |============================
 */
 .hero-container {
+  margin-left: auto;
+  margin-right: auto;
   padding: 370px 20px 20px 20px;
   background-color: #fafafa;
-  width: 320px;
+  width: 280px;
   height: 620px;
   background: linear-gradient(
       180deg,
@@ -14,10 +16,10 @@
       rgba(17, 17, 17, 0.4) 100%
     ),
     url(../img/hero-and-buynow-imgs/background-img-mobile-1x.jpg);
+  border-radius: 32px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 32px;
   margin-bottom: 72px;
 }
 
@@ -66,7 +68,7 @@
 }
 
 .hero-uppertitle {
-  width: 280px;
+  width: 257px;
   color: #ffffff;
   font-weight: 500;
   font-size: 20px;
@@ -125,11 +127,11 @@
 
 .hero-button-list-button {
   height: 41px;
-  width: 120px;
+  width: 110px;
 
   background-color: #fd9222;
   border-radius: 100px;
-  padding: 12px 28px;
+  padding: 12px 22px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -137,6 +139,14 @@
   border: none;
   transition: background-color 300ms, color 300ms;
 }
+
+@media only screen and (min-width: 375px) {
+  .hero-button-list-button {
+    width: 120px;
+    padding: 12px 28px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .hero-button-list-button {
     height: 45px;
@@ -173,20 +183,21 @@
 
 .hero-button-list-button-link {
   text-align: center;
-  width: 159px;
+  width: 116px;
   height: 41px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
   border-radius: 100px;
   border-color: #ffffff;
-  padding: 12px 9px;
+  padding: 12px 5px;
   transition: color 300ms;
   color: #ffffff;
 }
 
 @media only screen and (min-width: 375px) {
   .hero-button-list-button-link {
+    width: 159px;
     padding: 12px 27px;
   }
 }
@@ -240,6 +251,7 @@
 */
 
 .backdrop-modal-buy-now {
+  overscroll-behavior: contain;
   z-index: 999;
   background: rgba(46, 47, 66, 0.4);
   position: fixed;
@@ -438,6 +450,11 @@
   background-color: #fafafa;
   outline: none;
   transition: border 300ms;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+  color: #000000;
 }
 .form-buy-now-field-personal:focus {
   border: 1px solid rgb(253, 146, 34);
@@ -595,6 +612,11 @@
   resize: none;
   outline: none;
   transition: border 300ms;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+  color: #000000;
 }
 
 .form-buy-now-field-comment:focus {

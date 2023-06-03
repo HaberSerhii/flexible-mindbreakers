@@ -1,6 +1,6 @@
 <!-- Section HERO -->
-<section class="hero-container container" id="hero-section">
-  <div class="hero-content">
+<section class="container" id="hero-section">
+  <div class="hero-container hero-content">
     <h1 class="hero-title visually-hidden">
       Treat yourself or a loved one to our finest ingredients for a moment of
       pure delight!
@@ -18,8 +18,8 @@
         </li>
         <li class="hero-button-list-item">
           <!-- кнопку якоря на текущей странице придеться сделать с помощью js -->
-          <a class="hero-button-list-button-link link" href="#how-its-made">
-            How it’s made
+          <a class="hero-button-list-item-a link" href="#how-its-made">
+            <p class="hero-button-list-button-link">How it’s made</p>
           </a>
         </li>
       </ul>
@@ -110,6 +110,7 @@
             class="form-buy-now-field-personal form-buy-now-field-personal-ns"
             id="personal-inf"
             placeholder="Name"
+            autocomplete="off"
           />
           <input
             type="text"
@@ -117,6 +118,7 @@
             class="form-buy-now-field-personal form-buy-now-field-personal-ns"
             id="personal-inf-two"
             placeholder="Surname"
+            autocomplete="off"
           />
         </div>
         <label class="modal-buy-now-labels" for="personal-email">Email</label>
@@ -126,6 +128,7 @@
           class="form-buy-now-field-email form-buy-now-field-personal"
           id="personal-email"
           placeholder="Enter your email"
+          autocomplete="off"
         />
         <label class="modal-buy-now-labels" for="personal-tell"
           >Phone number</label
@@ -135,11 +138,11 @@
             type="tel"
             maxlength="9"
             minlength="9"
-            pattern="^[ 0-9]+$"
             name="personal-tell"
             class="form-buy-now-field-phone form-buy-now-field-personal"
             id="personal-tell"
             placeholder="Phone number"
+            autocomplete="off"
           />
           <svg class="icon-leftIcon" width="24" height="24">
             <use href="../img/sprite.svg#icon-LeftIcon"></use>
@@ -154,11 +157,11 @@
             type="text"
             maxlength="16"
             minlength="16"
-            pattern="^[ 0-9]+$"
             name="personal-card"
             class="form-buy-now-field-card form-buy-now-field-personal"
             id="personal-card"
             placeholder="Enter card"
+            autocomplete="off"
           />
           <svg class="icon-mastercard" width="32" height="21">
             <use href="../img/sprite.svg#icon-Mastercard"></use>
@@ -170,6 +173,7 @@
           class="form-buy-now-field-comment"
           id="client-comment"
           placeholder="Enter text"
+          autocomplete="off"
         ></textarea>
 
         <button class="modal-buy-now-sumbit-button" type="submit">
