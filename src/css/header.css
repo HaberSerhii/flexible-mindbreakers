@@ -19,6 +19,69 @@
   color: #111111;
 }
 
+.adress-modal-header {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.button-close-header {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.backdrop-header-menu {
+  overflow: auto;
+  position: fixed;
+  width: 220px;
+  height: 100%;
+  top: 0;
+  right: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #1e1823;
+  z-index: 999;
+}
+
+.modal-header {
+  height: 100%;
+  position: relative;
+  padding-top: 136px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+  .modal-header {
+    padding-top: 156px;
+  }
+  .button-close-header {
+    top: 24px;
+    right: 32px;
+  }
+
+  .adress-modal-header {
+    bottom: 24px;
+    left: 32px;
+
+  }
+
+  .backdrop-header-menu {
+    width: 290px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .list-nav-header,
   .social-links-header {
@@ -74,7 +137,7 @@
 
   .adress-svg-header {
     stroke: #111111;
-    fill: #e2e2e2;
+    fill: white;
     transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
     height: 24px;
     width: 24px;
@@ -100,15 +163,7 @@
   align-items: center;
 }
 
-.button-close-header {
-  border: none;
-  padding: 0;
-  background-color: transparent;
-  display: flex;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
+
 
 .list-nav-modal {
   max-width: 124px;
@@ -128,34 +183,14 @@
   padding: 20px 0 14px 0;
 }
 
-.modal-header {
-  height: 100%;
-  position: relative;
-  padding-top: 136px;
-}
+
 
 .icon-open-modal-header {
   stroke: #111111;
-  background-color: #e2e2e2;
+  background-color: #FAFAFA;
 }
 
-.backdrop-header-menu {
-  overflow: auto;
-  position: fixed;
-  width: 50%;
-  height: 100%;
-  top: 0;
-  right: 0;
 
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transform: translateX(100%);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: #1e1823;
-}
 
 .backdrop-header-menu.is-open {
   opacity: 1;
@@ -164,8 +199,12 @@
   transform: translateX(0);
 }
 
-.adress-modal-header {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
+.link-nav-header:hover,
+.link-nav-header:focus {
+  color: #fd9222;
 }
+
+.link-nav-header {
+transition: color 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67)
+}
+
