@@ -18,4 +18,3 @@
 import "./js/buy-now-modal"
 import "./js/swipper"
 import "./js/swipper"
-import "./js/reviews-swiper"
