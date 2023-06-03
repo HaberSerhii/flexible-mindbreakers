@@ -5,8 +5,6 @@
   background-color: var(--white-color);
 }
 /* SECTION OUR PRODUCTS */
-.our-product > .container {
-}
 
 /* TITEL OUR PRODUCTS */
 .titel-product {
@@ -19,10 +17,131 @@
   text-align: center;
 
   color: var(--black-color);
+  margin-bottom: 32px;
 }
 
 .yellow-titel-product {
   color: var(--orange-color);
 }
 
-/* TITEL OUR PRODUCTS */
+@media only screen and (min-width: 768px) {
+  .titel-product {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+/* TITEL OUR PRODUCTS end  */
+
+/* js-image-slide */
+
+.swiper {
+  max-width: 100%;
+  max-height: 100%;
+  padding-bottom: 20px;
+}
+
+.our-product-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  width: 335px;
+  height: 364px;
+}
+
+@media only screen and (min-width: 768px) {
+  .our-product-slide {
+    width: 270px !important;
+    margin-bottom: 32px;
+  }
+}
+/* js-image-slide end */
+
+/* image*/
+
+.image-swiper-chokolate {
+  margin-bottom: 8px;
+}
+
+/* image end */
+
+/* text or name */
+.name-product {
+  color: var(--black-color);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  margin-bottom: 2px;
+
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.text-product {
+  margin-bottom: 18px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.02em;
+  color: #111111b3;
+}
+/* text or name  end */
+
+/* button */
+
+.button-price-products {
+  border-radius: 100px;
+  min-width: 94px;
+  min-height: 33px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+
+  color: var(--black-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 8px 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.button-price-products:hover,
+.button-price-products:focus {
+  color: var(--white-color);
+}
+
+.button-price-products:after {
+  content: '';
+  background: var(--orange-color);
+
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.button-price-products:hover:after,
+.button-price-products:focus:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* button-end */
+.swiper-pagination-bullet-active {
+  background: #fd9222;
+  width: 28px;
+  height: 13px;
+  border-radius: 50px;
+}

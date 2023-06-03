@@ -16,3 +16,6 @@
 
 // Modal Buy-now
 import "./js/buy-now-modal"
+
+import "./js/swipper"
+import "./js/swipper"
