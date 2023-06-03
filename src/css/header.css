@@ -51,10 +51,21 @@
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #1e1823;
+  z-index: 999;
+}
+
+.modal-header {
+  height: 100%;
+  position: relative;
+  padding-top: 136px;
 }
 
 
 @media screen and (min-width: 768px) {
+
+  .modal-header {
+    padding-top: 156px;
+  }
   .button-close-header {
     top: 24px;
     right: 32px;
@@ -64,6 +75,10 @@
     bottom: 24px;
     left: 32px;
 
+  }
+
+  .backdrop-header-menu {
+    width: 290px;
   }
 }
 
@@ -168,34 +183,14 @@
   padding: 20px 0 14px 0;
 }
 
-.modal-header {
-  height: 100%;
-  position: relative;
-  padding-top: 136px;
-}
+
 
 .icon-open-modal-header {
   stroke: #111111;
-  background-color: white;
+  background-color: #FAFAFA;
 }
 
-.backdrop-header-menu {
-  overflow: auto;
-  position: fixed;
-  width: 50%;
-  height: 100%;
-  top: 0;
-  right: 0;
 
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transform: translateX(100%);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: #1e1823;
-}
 
 .backdrop-header-menu.is-open {
   opacity: 1;
@@ -204,4 +199,12 @@
   transform: translateX(0);
 }
 
+.link-nav-header:hover,
+.link-nav-header:focus {
+  color: #fd9222;
+}
+
+.link-nav-header {
+transition: color 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67)
+}
 
