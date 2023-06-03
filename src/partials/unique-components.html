@@ -16,6 +16,7 @@
     <li class="unique-item">
       <div class="thumb-card">
         <img
+          class="centr-img"
           srcset="
          ./img/unique/img-1-206.png 206w
          ./img/unique/img-1-224.png 224w
@@ -28,11 +29,12 @@
           width="224"
           height="171"
         />
-        <h3>MILK CHOCOLATE</h3>
-
-        <div class="overlay-card">
-          <h3>MILK CHOCOLATE</h3>
-          <button type="button" class="btn-ingredient">chocolate</button>
+        <h3 class="unique-card-title">MILK CHOCOLATE</h3>
+        <div class="overlay-card" id="text">
+          <h3 class="overlay-card-title">MILK CHOCOLATE</h3>
+          <button type="button" class="btn-ingredient" id="hider">
+            chocolate
+          </button>
           <button type="button" class="overlay-btn">the benefits</button>
           <p class="overlay-unique-text">
             Milk chocolate is a solid chocolate confectionery containing cocoa,
@@ -47,6 +49,7 @@
     <li class="unique-item scren-chen">
       <div class="thumb-card">
         <img
+          class="centr-img"
           srcset="
             ./img/unique/img-2-206.png 206w
             ./img/unique/img-2-224.png 224w
@@ -59,9 +62,9 @@
           width="224"
           height="171"
         />
-        <h3>MILK</h3>
+        <h3 class="unique-card-title-white">MILK</h3>
         <div class="overlay-card">
-          <h3>MILK</h3>
+          <h3 class="overlay-card-title">MILK</h3>
           <button type="button" class="btn-ingredient">milk</button>
           <button type="button" class="overlay-btn">the benefits</button>
           <p class="overlay-unique-text">
@@ -77,6 +80,7 @@
     <li class="unique-item scren-chen">
       <div class="thumb-card">
         <img
+          class="centr-img"
           srcset="
                       ./img/unique/img-3-206.png 206w
                       ./img/unique/img-3-224.png 224w
@@ -89,10 +93,9 @@
           width="224"
           height="171"
         />
-        <h3>NUTS</h3>
-
+        <h3 class="unique-card-title">NUTS</h3>
         <div class="overlay-card">
-          <h3>NUTS</h3>
+          <h3 class="overlay-card-title">NUTS</h3>
           <button type="button" class="btn-ingredient">nuts</button>
           <button type="button" class="overlay-btn">the benefits</button>
           <p class="overlay-unique-text">
@@ -108,6 +111,7 @@
     <li class="unique-item">
       <div class="thumb-card">
         <img
+          class="centr-img"
           srcset="
                       ./img/unique/img-4-206.png 206w
                       ./img/unique/img-4-224.png 224w
@@ -120,12 +124,12 @@
           width="224"
           height="171"
         />
-        <h3>SEMI - SWEET CHOCOLATE</h3>
+        <h3 class="unique-card-title-white">SEMI - SWEET CHOCOLATE</h3>
         <div class="overlay-card">
-          <h3>SEMI - SWEET CHOCOLATE</h3>
+          <h3 class="overlay-card-title">SEMI - SWEET CHOCOLATE</h3>
           <button type="button" class="btn-ingredient">sweet chocolate</button>
           <button type="button" class="overlay-btn">the benefits</button>
-          <p class="overlay-unique-text">
+          <p class="overlay-unique-text ellipsis">
             Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of
             the best ways to gain an understanding of this type of chocolate is
             to compare it to a different type of chocolate. Semisweet is darker
@@ -137,3 +141,8 @@
     </li>
   </ul>
 </section>
+<!-- <script>
+  document.getElementById('hider').onclick = function () {
+    document.getElementById('text').hidden = true;
+  };
+</script> -->
