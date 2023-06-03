@@ -30,7 +30,7 @@
     
     <link rel="icon" href="data:;base64,=" />
     <script type="module" crossorigin src="/flexible-mindbreakers/assets/index-02566ca6.js"></script>
-    <link rel="stylesheet" href="/flexible-mindbreakers/assets/index-6b0045a8.css">
+    <link rel="stylesheet" href="/flexible-mindbreakers/assets/index-fd7744e2.css">
   </head>
   <body>
     <header class="header">
@@ -383,9 +383,9 @@
         <img
           class="centr-img"
           srcset="/flexible-mindbreakers/assets/img-1-206-e16ea73e.png 206w
- ./img/unique/img-1-224.png 224w
- ./img/unique/img-1-412.png 412w
- ./img/unique/img-1-448.png 448w"
+ /img/unique/img-1-224.png 224w
+ /img/unique/img-1-412.png 412w
+ /img/unique/img-1-448.png 448w"
           sizes="(min-width: 1200px) 206px, (min-width:768px) 224px, (min-width:375px) 224px, 100vw"
           src="/flexible-mindbreakers/assets/img-1-206-e16ea73e.png"
           alt="chocolate"
@@ -414,9 +414,9 @@
         <img
           class="centr-img"
           srcset="/flexible-mindbreakers/assets/img-2-206-7f95c264.png 206w
- ./img/unique/img-2-224.png 224w
- ./img/unique/img-2-412x.png 412w
- ./img/unique/img-2-448.png 448w"
+ /img/unique/img-2-224.png 224w
+ /img/unique/img-2-412x.png 412w
+ /img/unique/img-2-448.png 448w"
           sizes="(min-width: 1200px) 206px, (min-width:768px) 224px, (min-width:375px) 224px, 100vw"
           src="/flexible-mindbreakers/assets/img-2-224-80ed62c0.png"
           alt="milk"
@@ -424,9 +424,9 @@
           height="171"
         />
         <h3 class="unique-card-title-white">MILK</h3>
-        <div class="overlay-card">
+        <div class="overlay-card" id="tex">
           <h3 class="overlay-card-title">MILK</h3>
-          <button type="button" class="btn-ingredient">milk</button>
+          <button type="button" class="btn-ingredient" id="hidde">milk</button>
           <button type="button" class="overlay-btn">the benefits</button>
           <p class="overlay-unique-text">
             Milk is a white liquid food produced by the mammary glands of
@@ -443,9 +443,9 @@
         <img
           class="centr-img"
           srcset="/flexible-mindbreakers/assets/img-3-206-cb79a089.png 206w
- ./img/unique/img-3-224.png 224w
- ./img/unique/img-3-412.png 412w
- ./img/unique/img-3-448.png 448w"
+ /img/unique/img-3-224.png 224w
+ /img/unique/img-3-412.png 412w
+ /img/unique/img-3-448.png 448w"
           sizes="(min-width: 1200px) 206px, (min-width:768px) 224px, (min-width:375px) 224px, 100vw"
           src="/flexible-mindbreakers/assets/img-3-224-b3552e57.png"
           alt="nut"
@@ -453,9 +453,9 @@
           height="171"
         />
         <h3 class="unique-card-title">NUTS</h3>
-        <div class="overlay-card">
+        <div class="overlay-card" id="texte">
           <h3 class="overlay-card-title">NUTS</h3>
-          <button type="button" class="btn-ingredient">nuts</button>
+          <button type="button" class="btn-ingredient" id="hid">nuts</button>
           <button type="button" class="overlay-btn">the benefits</button>
           <p class="overlay-unique-text">
             Almonds, pistachios, and walnuts are some types of nuts that contain
@@ -472,9 +472,9 @@
         <img
           class="centr-img"
           srcset="/flexible-mindbreakers/assets/img-4-206-8d3a623b.png 206w
- ./img/unique/img-4-224.png 224w
- ./img/unique/img-4-412.png 412w
- ./img/unique/img-4-448.png 448w"
+ /img/unique/img-4-224.png 224w
+ /img/unique/img-4-412.png 412w
+ /img/unique/img-4-448.png 448w"
           sizes="(min-width: 1200px) 206px, (min-width:768px) 224px, (min-width:375px) 224px, 100vw"
           src="/flexible-mindbreakers/assets/img-4-224-01f2b2f3.png"
           alt="sweet chocolate"
@@ -482,9 +482,11 @@
           height="171"
         />
         <h3 class="unique-card-title-white">SEMI - SWEET CHOCOLATE</h3>
-        <div class="overlay-card">
+        <div class="overlay-card" id="textes">
           <h3 class="overlay-card-title">SEMI - SWEET CHOCOLATE</h3>
-          <button type="button" class="btn-ingredient">sweet chocolate</button>
+          <button type="button" class="btn-ingredient" id="hide">
+            sweet chocolate
+          </button>
           <button type="button" class="overlay-btn">the benefits</button>
           <p class="overlay-unique-text ellipsis">
             Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of
@@ -501,6 +503,15 @@
 <!-- <script>
   document.getElementById('hider').onclick = function () {
     document.getElementById('text').hidden = true;
+  };
+  document.getElementById('hidde').onclick = function () {
+    document.getElementById('tex').hidden = true;
+  };
+  document.getElementById('hid').onclick = function () {
+    document.getElementById('texte').hidden = true;
+  };
+  document.getElementById('hide').onclick = function () {
+    document.getElementById('textes').hidden = true;
   };
 </script> -->
 
