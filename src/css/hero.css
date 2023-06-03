@@ -123,7 +123,7 @@
 .hero-scroll-down-div {
   margin-top: 32px;
   display: flex;
-  gap: 14px;
+
   align-items: center;
 }
 
@@ -139,13 +139,16 @@
   }
 }
 
+.hero-scroll-down-link {
+}
+
 .hero-button-list-button {
   height: 41px;
   width: 110px;
 
   background-color: #fd9222;
   border-radius: 100px;
-  padding: 12px 22px;
+  padding: 12px 18px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -204,7 +207,7 @@
   line-height: 1.21;
   border-radius: 100px;
   border-color: #ffffff;
-  padding: 12px 5px;
+  padding: 12px 1px;
   transition: color 300ms;
   color: #ffffff;
 }
@@ -233,11 +236,14 @@
 }
 
 .hero-scroll-down-text {
+  height: 38px;
+  min-width: 78px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: -0.03em;
   color: #ffffff;
+  padding-top: 8px;
 }
 @media only screen and (min-width: 768px) {
   .hero-scroll-down-text {
@@ -245,6 +251,11 @@
     line-height: 1.28;
   }
 }
+
+.hero-scroll-down-icon {
+  margin-left: 14px;
+}
+
 @media only screen and (min-width: 768px) {
   .hero-scroll-down-icon {
     width: 38px;
