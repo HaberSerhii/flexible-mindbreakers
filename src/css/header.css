@@ -19,6 +19,54 @@
   color: #111111;
 }
 
+.adress-modal-header {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.button-close-header {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.backdrop-header-menu {
+  overflow: auto;
+  position: fixed;
+  width: 220px;
+  height: 100%;
+  top: 0;
+  right: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #1e1823;
+}
+
+
+@media screen and (min-width: 768px) {
+  .button-close-header {
+    top: 24px;
+    right: 32px;
+  }
+
+  .adress-modal-header {
+    bottom: 24px;
+    left: 32px;
+
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .list-nav-header,
   .social-links-header {
@@ -74,7 +122,7 @@
 
   .adress-svg-header {
     stroke: #111111;
-    fill: #e2e2e2;
+    fill: white;
     transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
     height: 24px;
     width: 24px;
@@ -100,15 +148,7 @@
   align-items: center;
 }
 
-.button-close-header {
-  border: none;
-  padding: 0;
-  background-color: transparent;
-  display: flex;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
+
 
 .list-nav-modal {
   max-width: 124px;
@@ -136,7 +176,7 @@
 
 .icon-open-modal-header {
   stroke: #111111;
-  background-color: #e2e2e2;
+  background-color: white;
 }
 
 .backdrop-header-menu {
@@ -164,8 +204,4 @@
   transform: translateX(0);
 }
 
-.adress-modal-header {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-}
+
