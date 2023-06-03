@@ -30,7 +30,7 @@
     
     <link rel="icon" href="data:;base64,=" />
     <script type="module" crossorigin src="/flexible-mindbreakers/assets/index-98905eac.js"></script>
-    <link rel="stylesheet" href="/flexible-mindbreakers/assets/index-b1df0e11.css">
+    <link rel="stylesheet" href="/flexible-mindbreakers/assets/index-aa3b692e.css">
   </head>
   <body>
     <header class="header">
@@ -145,10 +145,7 @@
         </li>
         <li class="hero-button-list-item">
           <!-- кнопку якоря на текущей странице придеться сделать с помощью js -->
-          <a
-            class="hero-button-list-button-link link"
-            href="../partials/how-its-made.html"
-          >
+          <a class="hero-button-list-button-link link" href="#how-its-made">
             How it’s made
           </a>
         </li>
@@ -167,17 +164,17 @@
   </div>
 </section>
 <!-- MODAL BUY NOW -->
-<div class="backdrop-modal-buy-now is-hidden" data-modal>
+<div class="backdrop-modal-buy-now is-hidden" id="modal" data-modal>
   <div class="modal-buy-now-cont">
     <div class="modal-buy-now-content">
       <button type="button" data-modal-close class="modal-buy-close-button">
         <svg
           class="modal-buy-close-icon"
-          width="8"
-          height="8"
+          width="12"
+          height="12"
           id="modal-buy-close-icon"
         >
-          <use href=""></use>
+          <use href="../img/sprite.svg#icon-close-black-modal-buy"></use>
         </svg>
       </button>
       <strong class="modal-buy-now-title"
@@ -190,9 +187,10 @@
               srcset="
                 ../img/hero-and-buynow-imgs/buy-now-first-chocolate-mobile-1x.jpg  1x,
                 ../img/hero-and-buynow-imgs/buy-now-first-chocolate-mobile-2x.jpg  2x,
-                ../img/hero-and-buynow-imgs/buy-now-first-chocolate-desktop-1x.jpg 1x,
+                ../img/hero-and-buynow-imgs/buy-now-first-chocolate-desktop-1x.jpg 120w,
                 ../img/hero-and-buynow-imgs/buy-now-first-chocolate-desktop-2x.jpg 2x
               "
+              sizes="(min-width: 768px) 120px, 100vw"
               src="../img/hero-and-buynow-imgs/buy-now-first-chocolate-mobile-1x.jpg"
               alt="chocolate-one"
               class="modal-buy-now-list-item-img-chocolate"
@@ -236,14 +234,14 @@
           <input
             type="text"
             name="personal-inf"
-            class="form-buy-now-field-personal"
+            class="form-buy-now-field-personal form-buy-now-field-personal-ns"
             id="personal-inf"
             placeholder="Name"
           />
           <input
             type="text"
             name="personal-inf"
-            class="form-buy-now-field-personal"
+            class="form-buy-now-field-personal form-buy-now-field-personal-ns"
             id="personal-inf-two"
             placeholder="Surname"
           />
@@ -262,6 +260,9 @@
         <div class="form-buy-now-field-phone-div">
           <input
             type="tel"
+            maxlength="9"
+            minlength="9"
+            pattern="^[ 0-9]+$"
             name="personal-tell"
             class="form-buy-now-field-phone form-buy-now-field-personal"
             id="personal-tell"
@@ -278,6 +279,9 @@
         <div class="form-buy-now-field-card-div">
           <input
             type="text"
+            maxlength="16"
+            minlength="16"
+            pattern="^[ 0-9]+$"
             name="personal-card"
             class="form-buy-now-field-card form-buy-now-field-personal"
             id="personal-card"
@@ -293,10 +297,11 @@
           class="form-buy-now-field-comment"
           id="client-comment"
           placeholder="Enter text"
-        >
-        </textarea>
+        ></textarea>
 
-        <button type="submit">Sumbit</button>
+        <button class="modal-buy-now-sumbit-button" type="submit">
+          Sumbit
+        </button>
       </form>
     </div>
   </div>
@@ -310,7 +315,7 @@
         <li class="advantage-item item-line">
           <div class="advantage-icon">
             <svg class="advantage-svg" width="32" height="32">
-              <use href="/flexible-mindbreakers/assets/sprite-884f54ce.svg#advantages-chocolate"></use>
+              <use href="/flexible-mindbreakers/assets/sprite-0229dc13.svg#advantages-chocolate"></use>
             </svg>
           </div>
           <h2 class="title-third light">Unsurpassed taste</h2>
@@ -326,7 +331,7 @@
         <li class="advantage-item item-line advantage-item-padding">
           <div class="advantage-icon">
             <svg class="advantage-svg" width="32" height="32">
-              <use href="/flexible-mindbreakers/assets/sprite-884f54ce.svg#advantages-coin"></use>
+              <use href="/flexible-mindbreakers/assets/sprite-0229dc13.svg#advantages-coin"></use>
             </svg>
           </div>
           <h2 class="title-third light">Affordable price</h2>
@@ -343,7 +348,7 @@
         <li class="advantage-item last-item">
           <div class="advantage-icon">
             <svg class="advantage-svg" width="32" height="32">
-              <use href="/flexible-mindbreakers/assets/sprite-884f54ce.svg#advantages-spoon"></use>
+              <use href="/flexible-mindbreakers/assets/sprite-0229dc13.svg#advantages-spoon"></use>
             </svg>
           </div>
           <h2 class="title-third light">Own production</h2>
@@ -795,7 +800,7 @@
                 aria-label="instagram icon"
               >
                 <svg class="footer-social-icon" width="24" height="24">
-                  <use href="/flexible-mindbreakers/assets/sprite-884f54ce.svg#instagram-footer"></use>
+                  <use href="/flexible-mindbreakers/assets/sprite-0229dc13.svg#instagram-footer"></use>
                 </svg>
               </a>
             </li>
@@ -809,7 +814,7 @@
                 aria-label="twitter icon"
               >
                 <svg class="footer-social-icon" width="24" height="24">
-                  <use href="/flexible-mindbreakers/assets/sprite-884f54ce.svg#twitter-footer"></use>
+                  <use href="/flexible-mindbreakers/assets/sprite-0229dc13.svg#twitter-footer"></use>
                 </svg>
               </a>
             </li>
