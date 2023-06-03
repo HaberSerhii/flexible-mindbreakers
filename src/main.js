@@ -12,3 +12,11 @@
     refs.menu.classList.toggle('is-open');
   }
 })();
+
+
+// Modal Buy-now
+import "./js/buy-now-modal"
+import "./js/swipper"
+import "./js/swipper"
+import "./js/subscribe-modal.js"
+import "./js/slow-scroll"
