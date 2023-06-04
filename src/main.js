@@ -1,21 +1,7 @@
-(() => {
-  const refs = {
-    openMenuBtn: document.querySelector('[data-menu-open]'),
-    closeMenuBtn: document.querySelector('[data-menu-close]'),
-    menu: document.querySelector('[data-menu]'),
-  };
-
-  refs.openMenuBtn.addEventListener('click', toggleModal);
-  refs.closeMenuBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    refs.menu.classList.toggle('is-open');
-  }
-})();
-
-// Modal Buy-now
 import './js/buy-now-modal';
 import './js/swipper';
 import './js/subscribe-modal';
 import './js/slow-scroll';
 import './js/reviews';
+import './js/modal';
+import './js/anchor-scroll';
