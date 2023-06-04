@@ -43,7 +43,7 @@
   }
 }
 .how-its-made-video-section-mobile {
-  max-width: 335px;
+  min-width: 100%;
   max-height: 500px;
   border-radius: 15px;
   overflow: hidden;
