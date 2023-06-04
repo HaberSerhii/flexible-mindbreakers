@@ -1,32 +1,77 @@
-<header id="header" class="header">
-  <div class="container container-header">
-    <a class="logo-header" href="">SIMPLY CHOCOLATE</a>
-    <svg class="svg-logo-header" width="21" height="21">
-      <use href="/img/sprite.svg#icon-logo-header"></use>
+<div class="container container-header">
+  <a class="logo-header" href="">SIMPLY CHOCOLATE</a>
+  <svg class="svg-logo-header" width="21" height="21">
+    <use href="/img/sprite.svg#icon-logo-header"></use>
+  </svg>
+  <nav class="nav-header">
+    <ul class="list-nav-header">
+      <li class="item-nav-header">
+        <a class="link-nav-header" href="#header">Home</a>
+      </li>
+      <li class="item-nav-header">
+        <a class="link-nav-header" href="#how-its-made">How it’s made?</a>
+      </li>
+      <li class="item-nav-header">
+        <a class="link-nav-header" href="#our-products">Our products</a>
+      </li>
+      <li class="item-nav-header">
+        <a class="link-nav-header" href="#top-sellers">Top sellers</a>
+      </li>
+      <li class="item-nav-header">
+        <a class="link-nav-header" href="#chocolate-is-loved"
+          >Chocolate is loved</a
+        >
+      </li>
+    </ul>
+  </nav>
+  <address class="social-links-header">
+    <ul class="social-links-header">
+      <li>
+        <a href="https://www.instagram.com/"
+          ><svg class="adress-svg-header" width="22" height="22">
+            <use href="/img/sprite.svg#icon-instagram-header"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/?lang=ru"
+          ><svg class="adress-svg-header" width="22" height="22">
+            <use href="/img/sprite.svg#icon-twitter-header"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </address>
+  <button
+    type="button"
+    class="button-open-modal-header"
+    aria-expanded="false"
+    data-menu-open
+  >
+    <svg class="icon-open-modal-header" width="28" height="28">
+      <use href="/img/sprite.svg#icon-button-open-modal-header"></use>
     </svg>
-    <nav class="nav-header">
-      <ul class="list-nav-header">
-        <li class="item-nav-header">
-          <a class="link-nav-header" href="#header">Home</a>
-        </li>
-        <li class="item-nav-header">
-          <a class="link-nav-header" href="#how-its-made">How it’s made?</a>
-        </li>
-        <li class="item-nav-header">
-          <a class="link-nav-header" href="#our-products">Our products</a>
-        </li>
-        <li class="item-nav-header">
-          <a class="link-nav-header" href="#top-sellers">Top sellers</a>
-        </li>
-        <li class="item-nav-header">
-          <a class="link-nav-header" href="#chocolate-is-loved"
-            >Chocolate is loved</a
-          >
-        </li>
+  </button>
+</div>
+
+<div class="backdrop-header-menu" data-menu>
+  <div class="modal-header">
+    <button class="button-close-header" type="button" data-menu-close>
+      <svg width="28" height="28">
+        <use href="/img/sprite.svg#icon-button-close-modal-header"></use>
+      </svg>
+    </button>
+    <nav>
+      <ul class="list-nav-modal">
+        <li class="item-nav-header">Home</li>
+        <li class="item-nav-header">How it’s made?</li>
+        <li class="item-nav-header">Our products</li>
+        <li class="item-nav-header">Top sellers</li>
+        <li class="item-nav-header">Chocolate is loved</li>
       </ul>
     </nav>
-    <address class="social-links-header">
-      <ul class="social-links-header">
+    <address class="adress-modal-header">
+      <ul class="social-links-modal">
         <li>
           <a href="https://www.instagram.com/"
             ><svg class="adress-svg-header" width="22" height="22">
@@ -43,52 +88,5 @@
         </li>
       </ul>
     </address>
-    <button
-      type="button"
-      class="button-open-modal-header"
-      aria-expanded="false"
-      data-menu-open
-    >
-      <svg class="icon-open-modal-header" width="28" height="28">
-        <use href="/img/sprite.svg#icon-button-open-modal-header"></use>
-      </svg>
-    </button>
   </div>
-
-  <div class="backdrop-header-menu" data-menu>
-    <div class="modal-header">
-      <button class="button-close-header" type="button" data-menu-close>
-        <svg width="28" height="28">
-          <use href="/img/sprite.svg#icon-button-close-modal-header"></use>
-        </svg>
-      </button>
-      <nav>
-        <ul class="list-nav-modal">
-          <li class="item-nav-header">Home</li>
-          <li class="item-nav-header">How it’s made?</li>
-          <li class="item-nav-header">Our products</li>
-          <li class="item-nav-header">Top sellers</li>
-          <li class="item-nav-header">Chocolate is loved</li>
-        </ul>
-      </nav>
-      <address class="adress-modal-header">
-        <ul class="social-links-modal">
-          <li>
-            <a href="https://www.instagram.com/"
-              ><svg class="adress-svg-header" width="22" height="22">
-                <use href="/img/sprite.svg#icon-instagram-header"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/?lang=ru"
-              ><svg class="adress-svg-header" width="22" height="22">
-                <use href="/img/sprite.svg#icon-twitter-header"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </address>
-    </div>
-  </div>
-</header>
+</div>
