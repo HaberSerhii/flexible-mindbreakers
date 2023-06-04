@@ -1,8 +1,84 @@
 .subscribe-section {
   padding-top: 62px;
   padding-bottom: 63px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url();
+  background-color: var(--dark-violet-color);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(/img/subscribe/subcribe-mob@1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(/img/subscribe/subcribe-mob@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 376px) {
+  .hero {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(/img/subscribe/subcribe-tab@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(/img/subscribe/subcribe-tab@2x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .hero {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(/img/subscribe/subcribe-desk@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)
+        ),
+        url(/img/subscribe/subcribe-desk@2x.jpg);
+    }
+  }
 }
 
 .subscribe-container {
@@ -20,6 +96,12 @@
   text-align: center;
   letter-spacing: -0.03em;
   color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.17;
+    max-width: 378px;
+  }
 }
 
 .subscribe-describe {
@@ -29,6 +111,10 @@
   line-height: 1.29;
   text-align: center;
   color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    max-width: 467px;
+  }
 }
 
 .subscribe-btn {
@@ -38,18 +124,26 @@
   color: #ffffff;
   border-radius: 100px;
   border: none;
+  min-width: 128px;
+  min-height: 41px;
 
   font-weight: 600;
   line-height: 1.21;
 
-  margin-left: auto;
-  margin-right: auto;
+  transition: color 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  @media screen and (min-width: 768px) {
+    padding: 14px 40px;
+    min-width: 172px;
+    min-height: 50px;
+    line-height: 1.22;
+  }
 }
 
 .subscribe-btn:hover,
 .subscribe-btn:focus {
-  background: #fcf1e0;
-  color: #fd9222;
+  background-color: #fcf1e0;
+  color: var(--orange-color);
 }
 
 /* ================= MODAL WINDOW SUBSCRIBE ============== */
@@ -73,13 +167,18 @@
 }
 
 .modal-subscribe {
-  margin: 0 auto;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 311px;
   min-height: 350px;
   background: var(--white-color);
   border-radius: 15px;
-  padding: 0;
+
+  @media screen and (min-width: 768px) {
+    width: 538px;
+  }
 }
 
 .modal-subscribe-close-btn {
@@ -90,14 +189,53 @@
   right: 14px;
   background-color: transparent;
   border: none;
+
+  @media screen and (min-width: 768px) {
+    top: 24px;
+    right: 24px;
+  }
+}
+
+.modal-subscribe-close-icon {
+  @media screen and (min-width: 768px) {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 .background-img {
-  width: 311px;
+  max-width: 311px;
   height: 169px;
   border-radius: 15px 15px 0px 0px;
   background-color: var(--dark-violet-color);
-  background-image: url();
+  background-image: url(/img/subscribe/subcribe-modal-mob@1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .background-img {
+      background-image: url(/img/subscribe/subcribe-modal-mob@2x.jpg);
+    }
+  }
+}
+
+@media only screen and (min-width: 312px) {
+  .background-img {
+    max-width: 538px;
+    background-image: url(/img/subscribe/subcribe-modal-tab-desk@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .background-img {
+      background-image: url(/img/subscribe/subcribe-modal-tab-desk@2x.jpg);
+    }
+  }
 }
 
 .subscribe-modal-field {
@@ -105,22 +243,21 @@
   flex-direction: column;
   padding: 32px 24px;
   gap: 24px;
+  @media screen and (min-width: 768px) {
+    padding: 40px;
+  }
 }
-
 .subscribe-title-dark {
   color: var(--black-color);
   text-align: left;
 }
-
 .subscribe-title-accent {
   display: inline-block;
   color: var(--orange-color);
 }
-
 .subscribe-form {
   position: relative;
 }
-
 .subscribe-modal-form-input {
   height: 45px;
   width: 100%;
@@ -129,16 +266,31 @@
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 25px;
   color: var(--black-color);
+  @media screen and (min-width: 768px) {
+    height: 52px;
+    width: 313px;
+    padding: 14px 24px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
-
+.subscribe-modal-form-input:focus {
+  outline: none;
+  border: 1.5px solid var(--orange-color);
+}
 .subscribe-form-input::placeholder {
   color: rgba(64, 64, 64, 0.3);
 }
-
 .subscribe-submit-btn {
   position: absolute;
   top: 0;
   right: 0;
   padding: 14px 22px;
   min-width: 100px;
+  height: 45px;
+  @media screen and (min-width: 768px) {
+    padding: 18px 32px;
+    min-width: 137px;
+    height: 52px;
+  }
 }

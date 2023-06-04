@@ -3,12 +3,29 @@
   | HERO SECTION
   |============================
 */
+
+.hero-container-section {
+  padding-bottom: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-container-section {
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-container-section {
+    padding-bottom: 72px;
+  }
+}
+
 .hero-container {
   margin-left: auto;
   margin-right: auto;
   padding: 370px 20px 20px 20px;
   background-color: #fafafa;
-  width: 280px;
+  width: 100%;
   height: 620px;
   background: linear-gradient(
       180deg,
@@ -20,7 +37,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-bottom: 72px;
 }
 
 @media only screen and (min-width: 375px) {
@@ -32,8 +48,7 @@
 
 @media only screen and (min-width: 768px) {
   .hero-container {
-    margin-bottom: 50px;
-    padding: 671px 40px 40px 40px !important;
+    padding: 671px 40px 40px 40px;
     width: 704px;
     height: 890px;
     background: linear-gradient(
@@ -46,8 +61,7 @@
 }
 @media only screen and (min-width: 1200px) {
   .hero-container {
-    margin-bottom: 72px;
-    padding: 381px 40px 40px 40px !important;
+    padding: 381px 40px 40px 40px;
     width: 1136px;
     height: 600px;
     background: linear-gradient(
@@ -364,6 +378,7 @@
   align-items: center;
   gap: 77px;
 }
+
 @media only screen and (min-width: 768px) {
   .modal-buy-now-list-item-img-and-text {
     flex-direction: column;
@@ -380,7 +395,14 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  transition: border 300ms;
 }
+
+.modal-buy-now-list-item:hover,
+.modal-buy-now-list-item:focus {
+  border: 1px solid #fd9222;
+}
+
 @media only screen and (min-width: 768px) {
   .modal-buy-now-list-item {
     width: 160px;
