@@ -1,6 +1,8 @@
 footer {
   padding: 32px 0;
   background-color: var(--dark-violet-color);
+  max-width: 1440px;
+  margin: auto;
   color: #ffffff;
 }
 

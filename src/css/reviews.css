@@ -1,0 +1,235 @@
+.reviews {
+  padding-bottom: 72px;
+}
+@media only screen and (min-width: 768px) {
+  .reviews {
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .reviews {
+    padding-bottom: 128px;
+  }
+}
+.reviews-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.reviews-heading {
+  margin-bottom: 32px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  color: var(--black-color);
+}
+.reviews-text-color {
+  color: var(--orange-color);
+}
+@media only screen and (min-width: 768px) {
+  .reviews-heading {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.reviews-card {
+  position: relative;
+
+  width: 335px;
+  height: 200px;
+  padding: 18px;
+
+  background-color: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  border-radius: 15px;
+}
+@media only screen and (min-width: 768px) {
+  .reviews-card {
+    width: 344px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .reviews-card {
+    width: 360px;
+  }
+}
+.reviews-thumb {
+  background-size: cover;
+
+  position: absolute;
+  top: -20%;
+  right: 50%;
+  transform: translateX(50%);
+}
+.reviews-customers-name {
+  user-select: none;
+  margin-top: 38px;
+  margin-bottom: 24px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+
+  color: var(--black-color);
+}
+.reviews-customers-feedback {
+  user-select: none;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+}
+.reviews-btn {
+  padding: 12px 28px;
+
+  width: 165px;
+  height: 41px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  text-align: center;
+
+  color: var(--black-color);
+
+  border: 1px solid var(--orange-color);
+  border-radius: 100px;
+}
+@media only screen and (min-width: 768px) {
+  .reviews-btn {
+    padding: 14px 40px;
+
+    width: 222px;
+    height: 50px;
+
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+  }
+}
+.reviews-swiper {
+  margin-bottom: 32px;
+  padding-bottom: 0;
+}
+@media only screen and (min-width: 768px) {
+  .reviews-swiper {
+    margin-bottom: 50px;
+  }
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  margin-right: 13px;
+
+  bottom: 0;
+
+  background: rgba(17, 17, 17, 0.1);
+  opacity: inherit;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  width: 28px;
+  height: 13px;
+  border-radius: 24px;
+
+  background: #fd9222;
+}
+.reviews-swiper .swiper-wrapper {
+  height: 200px;
+  padding-top: 41px;
+  padding-bottom: 33px;
+}
+@media only screen and (min-width: 768px) {
+  .sreviews-swiper .swiper-wrapper {
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
+}
+.reviews-swiper .swiper-pagination.swiper-indent {
+  bottom: 0;
+}
+
+/* button */
+.review-bakdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  background-color: rgba(46, 47, 66, 0.4);
+}
+.review-bakdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.review-modal {
+  display: none;
+  position: absolute;
+  top: calc(50%);
+  left: calc(50%);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 32px 24px;
+
+  min-height: 471px;
+  width: 311px;
+
+  background-color: #fafafa;
+
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+.reviews-modal-heading {
+  margin-bottom: 32px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.review-close-btn {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  width: 24px;
+  height: 24px;
+
+  cursor: pointer;
+}
+.review-form-field {
+  padding: 14px 18px;
+
+  width: 263px;
+  height: 45px;
+
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+}
