@@ -50,6 +50,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-container {
+    background-size: cover;
     background-image: linear-gradient(
         180deg,
         rgba(17, 17, 17, 0) 0%,
@@ -71,7 +72,7 @@
     padding: 671px 40px 40px 40px;
     width: 704px;
     height: 890px;
-    background: linear-gradient(
+    background-image: linear-gradient(
         180deg,
         rgba(17, 17, 17, 0) 0%,
         rgba(17, 17, 17, 0.4) 100%
@@ -82,6 +83,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-container {
+      background-size: cover;
       background-image: linear-gradient(
           180deg,
           rgba(17, 17, 17, 0) 0%,
@@ -107,6 +109,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-container {
+      background-size: cover;
       background-image: linear-gradient(
           180deg,
           rgba(17, 17, 17, 0) 0%,
@@ -834,5 +837,28 @@
     left: 24px;
     width: 32px;
     height: 32px;
+  }
+}
+
+.modal-buy-now-list-item-img-chocolate {
+  width: 84px;
+  height: 69px;
+}
+@media only screen and (min-width: 768px) {
+  .modal-buy-now-list-item-img-chocolate {
+    width: 120px;
+    height: 107px;
+  }
+}
+
+.modal-buy-now-list-item-img-chocolate-three {
+  width: 84px;
+  height: 69px;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-buy-now-list-item-img-chocolate-three {
+    width: 120px;
+    height: 111px;
   }
 }
