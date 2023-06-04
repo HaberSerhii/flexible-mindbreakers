@@ -116,12 +116,12 @@
     text-align: center;
   }
 }
-.swiper1 {
+.reviews-swiper {
   margin-bottom: 32px;
   padding-bottom: 0;
 }
 @media only screen and (min-width: 768px) {
-  .swiper1 {
+  .reviews-swiper {
     margin-bottom: 50px;
   }
 }
@@ -143,18 +143,18 @@
 
   background: #fd9222;
 }
-.swiper1 .swiper-wrapper {
+.reviews-swiper .swiper-wrapper {
   height: 200px;
   padding-top: 41px;
   padding-bottom: 33px;
 }
 @media only screen and (min-width: 768px) {
-  .swiper1 .swiper-wrapper {
+  .sreviews-swiper .swiper-wrapper {
     padding-top: 40px;
     padding-bottom: 45px;
   }
 }
-.swiper1 .swiper-pagination.swiper-indent {
+.reviews-swiper .swiper-pagination.swiper-indent {
   bottom: 0;
 }
 
