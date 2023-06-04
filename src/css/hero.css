@@ -184,11 +184,20 @@
 }
 
 .hero-scroll-down-link {
+  margin-left: 12px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #fff;
   height: 28px;
+  width: 28px;
+  transition: background-color 300ms;
 }
+
 @media only screen and (min-width: 768px) {
   .hero-scroll-down-link.link {
+    margin-left: 14px;
     height: 38px;
+    width: 38px;
   }
 }
 .hero-button-list-button {
@@ -308,40 +317,55 @@
 }
 
 .hero-scroll-down-text {
-  height: 28px;
-  min-width: 78px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: -0.03em;
   color: #ffffff;
   padding-top: 8px;
+  transition: color 300ms;
 }
 @media only screen and (min-width: 768px) {
   .hero-scroll-down-text {
-    margin-bottom: 8px;
     font-size: 14px;
     line-height: 1.28;
   }
 }
 
 .hero-scroll-down-icon {
+  fill: #fd9222;
+  transition: fill 300ms;
+}
+
+.hero-scroll-down-icon {
+  position: absolute;
   margin-left: 0px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 13px;
+  height: 7px;
 }
 
 @media only screen and (min-width: 768px) {
   .hero-scroll-down-icon {
-    width: 38px;
-    height: 38px;
-    margin-left: 14px;
+    width: 15px;
+    height: 9px;
   }
 }
 .hero-scroll-down-div:hover > .hero-scroll-down-text {
   color: #fd9222;
 }
-/* .hero-scroll-down-div:hover > .hero-scroll-down-icon {
-  fill: #020101;
-} */
+
+.hero-scroll-down-div:hover > .hero-scroll-down-link {
+  background-color: #fd9222;
+}
+
+.hero-scroll-down-div:hover > .hero-scroll-down-link > .hero-scroll-down-icon {
+  fill: #fff;
+}
 
 /**
   |============================
