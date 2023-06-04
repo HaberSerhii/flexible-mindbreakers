@@ -1,16 +1,3 @@
-.how-its-made-section {
-  margin-bottom: 72px;
-}
-@media only screen and (min-width: 768px) {
-  .how-its-made-section {
-    margin-bottom: 100px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .how-its-made-section {
-    margin-bottom: 128px;
-  }
-}
 .how-its-made-title {
   font-weight: 600;
   font-size: 20px;
