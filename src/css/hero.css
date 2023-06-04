@@ -241,13 +241,15 @@
 
 @media only screen and (min-width: 375px) {
   .hero-button-list-button {
+    text-align: center;
     width: 120px;
-    padding: 12px 28px;
+    padding: 12px 25px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .hero-button-list-button {
+    padding: 12px 28px;
     height: 45px;
     width: 144px;
   }
@@ -296,11 +298,12 @@
 @media only screen and (min-width: 375px) {
   .hero-button-list-button-link {
     width: 159px;
-    padding: 12px 27px;
+    padding: 12px 25px;
   }
 }
 @media only screen and (min-width: 768px) {
   .hero-button-list-button-link {
+    padding: 12px 27px;
     width: 183px;
     height: 45px;
     padding: 14px 39px;
@@ -525,7 +528,8 @@
 }
 
 .modal-buy-now-list-item-div {
-  padding: 6px 15px;
+  text-align: center;
+  padding: 6px 13px;
   margin-right: 16px;
   width: 73px;
   height: 29px;
@@ -536,6 +540,7 @@
 }
 @media only screen and (min-width: 768px) {
   .modal-buy-now-list-item-div {
+    padding: 6px 15px;
     margin-bottom: 18px;
     margin-right: 0px;
   }
