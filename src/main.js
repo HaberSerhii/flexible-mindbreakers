@@ -16,6 +16,6 @@
 // Modal Buy-now
 import './js/buy-now-modal';
 import './js/swipper';
-import './js/swipper';
-import './js/subscribe-modal.js';
+import './js/subscribe-modal';
 import './js/slow-scroll';
+import './js/reviews';
