@@ -29,8 +29,8 @@
     />
     
     <link rel="icon" href="data:;base64,=" />
-    <script type="module" crossorigin src="/flexible-mindbreakers/assets/index-6ab203d0.js"></script>
-    <link rel="stylesheet" href="/flexible-mindbreakers/assets/index-1f95a427.css">
+    <script type="module" crossorigin src="/flexible-mindbreakers/assets/index-e1318db5.js"></script>
+    <link rel="stylesheet" href="/flexible-mindbreakers/assets/index-81f147cd.css">
   </head>
   <body>
     <header class="header">
@@ -799,10 +799,160 @@
         called Cacao. Cacao has been around for thousands of years and was first
         discovered by the Native American tribe called the Mayans.
       </p>
-      <button class="sellers-button" type="button">Buy now</button>
+      <button class="sellers-button" data-modal-open-second type="button">Buy now</button>
     </div>
   </div>
 </section>
+
+
+
+<!-- MODAL BUY NOW -->
+<div class="backdrop-modal-buy-now is-hidden" id="modal" data-modal-second>
+  <div class="modal-buy-now-cont">
+    <div class="modal-buy-now-content">
+      <button type="button" data-modal-close-second class="modal-buy-close-button">
+        <svg
+          class="modal-buy-close-icon"
+          width="12"
+          height="12"
+          id="modal-buy-close-icon"
+        >
+          <use href="/flexible-mindbreakers/assets/sprite-ca97d1b9.svg#icon-close-black-modal-buy"></use>
+        </svg>
+      </button>
+      <strong class="modal-buy-now-title"
+        ><span class="modal-buy-now-title-word">BUY </span>NOW</strong
+      >
+      <ul class="modal-buy-now-list list">
+        <li class="modal-buy-now-list-item">
+          <div class="modal-buy-now-list-item-img-and-text">
+            <img
+              srcset="/flexible-mindbreakers/assets/buy-now-first-chocolate-mobile-1x-e1c4a1ea.jpg 84w, /flexible-mindbreakers/assets/buy-now-first-chocolate-mobile-2x-f89aaa9d.jpg 168w, /flexible-mindbreakers/assets/buy-now-first-chocolate-desktop-1x-890bca53.jpg 120w, /flexible-mindbreakers/assets/buy-now-first-chocolate-desktop-2x-cdc90da3.jpg 240w"
+              sizes="(min-width: 768px) 120px, (min-width: 0px) 84px, 100vw"
+              src="/flexible-mindbreakers/assets/buy-now-first-chocolate-mobile-1x-e1c4a1ea.jpg"
+              alt="chocolate-one"
+              class="modal-buy-now-list-item-img-chocolate"
+            />
+
+            <div class="modal-buy-now-list-item-div">
+              <p class="modal-buy-now-list-item-text">100 g</p>
+            </div>
+          </div>
+        </li>
+        <li class="modal-buy-now-list-item">
+          <div class="modal-buy-now-list-item-img-and-text">
+            <img
+              srcset="/flexible-mindbreakers/assets/buy-now-second-chocolate-mobile-1x-acf00969.jpg 84w, /flexible-mindbreakers/assets/buy-now-second-chocolate-mobile-2x-3198a3d1.jpg 168w, /flexible-mindbreakers/assets/buy-now-second-chocolate-desktop-1x-75f09cb5.jpg 120w, /flexible-mindbreakers/assets/buy-now-second-chocolate-desktop-2x-5642c2b4.jpg 240w"
+              sizes="(min-width: 768px) 120px, (min-width: 0px) 84px, 100vw"
+              src="/flexible-mindbreakers/assets/buy-now-second-chocolate-mobile-1x-acf00969.jpg"
+              alt="chocolate-two"
+              class="modal-buy-now-list-item-img-chocolate"
+            />
+            <div class="modal-buy-now-list-item-div">
+              <p class="modal-buy-now-list-item-text">200 g</p>
+            </div>
+          </div>
+        </li>
+        <li class="modal-buy-now-list-item">
+          <div class="modal-buy-now-list-item-img-and-text">
+            <img
+              srcset="/flexible-mindbreakers/assets/buy-now-third-chocolate-mobile-1x-c850f2db.jpg 84w, /flexible-mindbreakers/assets/buy-now-third-chocolate-mobile-2x-44c7e4cd.jpg 168w, /flexible-mindbreakers/assets/buy-now-third-chocolate-desktop-1x-9ec610cf.jpg 120w, /flexible-mindbreakers/assets/buy-now-third-chocolate-desktop-2x-3552f13c.jpg 240w"
+              sizes="(min-width: 768px) 120px, (min-width: 0px) 84px, 100vw"
+              src="/flexible-mindbreakers/assets/buy-now-third-chocolate-mobile-1x-c850f2db.jpg"
+              alt="chocolate-three"
+              class="modal-buy-now-list-item-img-chocolate"
+            />
+            <div class="modal-buy-now-list-item-div">
+              <p class="modal-buy-now-list-item-text">300 g</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <form class="mobal-buy-now-form">
+        <label class="modal-buy-now-labels" for="personal-inf"
+          >Personal information</label
+        >
+        <div class="modal-buy-now-name-and-surname">
+          <input
+            type="text"
+            name="personal-inf"
+            class="form-buy-now-field-personal form-buy-now-field-personal-ns"
+            id="personal-inf"
+            placeholder="Name"
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            name="personal-inf"
+            class="form-buy-now-field-personal form-buy-now-field-personal-ns"
+            id="personal-inf-two"
+            placeholder="Surname"
+            autocomplete="off"
+          />
+        </div>
+        <label class="modal-buy-now-labels" for="personal-email">Email</label>
+        <input
+          type="email"
+          name="personal-email"
+          class="form-buy-now-field-email form-buy-now-field-personal"
+          id="personal-email"
+          placeholder="Enter your email"
+          autocomplete="off"
+        />
+        <label class="modal-buy-now-labels" for="personal-tell"
+          >Phone number</label
+        >
+        <div class="form-buy-now-field-phone-div">
+          <input
+            type="tel"
+            maxlength="9"
+            minlength="9"
+            name="personal-tell"
+            class="form-buy-now-field-phone form-buy-now-field-personal"
+            id="personal-tell"
+            placeholder="Phone number"
+            autocomplete="off"
+          />
+          <svg class="icon-leftIcon" width="24" height="24">
+            <use href="/flexible-mindbreakers/assets/sprite-ca97d1b9.svg#icon-LeftIcon"></use>
+          </svg>
+          <p class="form-buy-now-field-phone-text-number">+380</p>
+        </div>
+        <label class="modal-buy-now-labels" for="personal-card"
+          >Card number</label
+        >
+        <div class="form-buy-now-field-card-div">
+          <input
+            type="text"
+            maxlength="16"
+            minlength="16"
+            name="personal-card"
+            class="form-buy-now-field-card form-buy-now-field-personal"
+            id="personal-card"
+            placeholder="Enter card"
+            autocomplete="off"
+          />
+          <svg class="icon-mastercard" width="32" height="21">
+            <use href="/flexible-mindbreakers/assets/sprite-ca97d1b9.svg#icon-Mastercard"></use>
+          </svg>
+        </div>
+        <label class="modal-buy-now-labels" for="client-comment">Comment</label>
+        <textarea
+          name="client-comment"
+          class="form-buy-now-field-comment"
+          id="client-comment"
+          placeholder="Enter text"
+          autocomplete="off"
+        ></textarea>
+
+        <button class="modal-buy-now-sumbit-button" type="submit">
+          Sumbit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
 
       <section class="reviews" id="chocolate-is-loved">
   <div class="reviews-wrapper container">
