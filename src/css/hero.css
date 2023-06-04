@@ -247,7 +247,7 @@
   .hero-button-list-button {
     text-align: center;
     width: 120px;
-    padding: 12px 25px;
+    padding: 12px 20px;
   }
 }
 
@@ -302,7 +302,7 @@
 @media only screen and (min-width: 375px) {
   .hero-button-list-button-link {
     width: 159px;
-    padding: 12px 25px;
+    padding: 12px 20px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -533,7 +533,7 @@
 
 .modal-buy-now-list-item-div {
   text-align: center;
-  padding: 6px 13px;
+  padding: 6px 9px;
   margin-right: 16px;
   width: 73px;
   height: 29px;
