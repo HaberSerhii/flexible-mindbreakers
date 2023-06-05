@@ -15,16 +15,16 @@
   }
 }
 .top-sellers {
-  margin-bottom: 72px;
+  padding-bottom: 72px;
 }
 @media only screen and (min-width: 768px) {
   .top-sellers {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .top-sellers {
-    margin-bottom: 128px;
+    padding-bottom: 128px;
   }
 }
 .top-sellers-div {
@@ -73,6 +73,7 @@
 @media only screen and (min-width: 1200px) {
   .top-sellers-img {
     min-width: 368px;
+    min-height: 464px;
   }
 }
 
@@ -149,6 +150,30 @@ max-width: 306px;
   font-size: 14px;
   line-height: 1.2;
   color: #ffffff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.sellers-button:after {
+  content: '';
+  background: #fcf1e0;
+
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.sellers-button:hover:after,
+.sellers-button:focus:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 @media only screen and (min-width: 768px) {
   .sellers-button  {
@@ -159,6 +184,11 @@ max-width: 306px;
 }
 .sellers-button:hover,
 .sellers-button:focus {
-  background: #fcf1e0;
+ 
   color: #fd9222;
+ 
+
 }
+
+
+
