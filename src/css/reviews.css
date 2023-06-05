@@ -15,7 +15,6 @@
   }
 }
 
-/*  --------------------------------------- */
 .reviews-heading {
   margin-bottom: 74px;
 
@@ -28,15 +27,27 @@
 
   color: var(--black-color);
 }
+.reviews-conteiner-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .reviews-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
+  column-gap: 16px;
+
+  margin-bottom: 65px;
+}
+@media only screen and (min-width: 768px) {
+  .reviews-wrapper {
+    margin-bottom: 94px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .reviews-wrapper {
-    gap: 28px;
+    column-gap: 28px;
   }
 }
 
@@ -45,7 +56,7 @@
 }
 @media only screen and (min-width: 768px) {
   .reviews-heading {
-    margin-bottom: 50px;
+    margin-bottom: 91px;
     font-size: 24px;
     line-height: 1.17;
   }
@@ -121,7 +132,7 @@
 }
 .reviews-btn {
   display: block;
-  margin-top: 65px;
+
   padding: 12px 28px;
 
   min-width: 165px;
@@ -260,9 +271,7 @@
 
   border: none;
   background-color: transparent;
-  transition: color 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 90%;
+
   width: 24px;
   height: 24px;
 
@@ -291,6 +300,9 @@
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 8px;
 }
+/* .review-form-field:focus {
+  border: 1px solid rgb(253, 146, 34);
+} */
 
 @media only screen and (min-width: 768px) {
   .review-form-field {
