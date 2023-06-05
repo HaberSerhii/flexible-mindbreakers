@@ -133,7 +133,7 @@
   }
 
   .header-scroll {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: #1e1823;
     transition: background-color 2500ms;
   }
   .header-scroll .link-nav-header {
@@ -185,8 +185,6 @@
     color: #111111;
   }
 }
-
-
 
 .list-nav-modal {
   max-width: 124px;
