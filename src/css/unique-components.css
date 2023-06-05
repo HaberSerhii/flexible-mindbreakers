@@ -110,6 +110,12 @@
 }
 .unique-item:nth-child(3) {
   background-color: var(--dark-violet-color);
+  border: 1px solid transparent;
+}
+.unique-item:nth-child(3):hover,
+.unique-item:nth-child(3):focus {
+  border: 1px solid #fd9222;
+  background-color: #fafafa;
 }
 @media only screen and (min-width: 768px) {
   .unique-item {
@@ -159,9 +165,7 @@
   margin: 0 auto;
 }
 
-.thumb-card:hover .overlay-card,
-.thumb-card:focus .overlay-card,
-.thumb-card:active .overlay-card {
+.unique-item:hover .overlay-card {
   transform: translateY(0%);
   animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -177,7 +181,19 @@
     opacity: 1;
   }
 }
-
+.overlay-unique-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: #111111;
+}
+@media only screen and (max-width: 375px) {
+  .overlay-card {
+    padding: 11px 19px 11px 19px;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .overlay-unique-text {
     width: 230px;
@@ -214,6 +230,33 @@
   color: #ffffff;
   border: none;
   margin-bottom: 14px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.btn-ingredient:hover,
+.btn-ingredient:focus {
+  background: #fafafa;
+}
+.btn-ingredient:after {
+  content: '';
+  background: var(--orange-color);
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.btn-ingredient:hover:after,
+.btn-ingredient:focus:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .overlay-btn {
   padding: 6px 16px;
@@ -227,15 +270,35 @@
   align-items: center;
   color: #111111;
   margin-bottom: 14px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-.overlay-unique-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: -0.02em;
-  color: #111111;
+.overlay-btn:hover,
+.overlay-btn:focus {
+  background: #fd9222;
 }
+.overlay-btn:after {
+  content: '';
+  background: #fafafa;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.5s;
+}
+
+.overlay-btn:hover:after,
+.overlay-btn:focus:after {
+  transform: skewX(-45deg) scale(1, 1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 @media only screen and (min-width: 1200px) {
   .overlay-card {
     overflow: hidden;
