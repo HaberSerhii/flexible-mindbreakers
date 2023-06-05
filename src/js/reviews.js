@@ -6,7 +6,11 @@ const reviewSwiper = new Swiper('.reviews-swiper', {
     el: '.reviews-swiper-pagination',
     clickable: true,
   },
+  touchRatio: 1,
+  loopedSlides: 3,
+  grabCursor: true,
 
+  loopFillGroupWithBlank: true,
   breakpoints: {
     0: {
       slidesPerView: 1,

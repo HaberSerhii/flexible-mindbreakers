@@ -21,6 +21,8 @@
                   "
                   src="/img/reviews/reviews.png"
                   alt="foto customer"
+                  width="80"
+                  height="80"
                 />
               </div>
               <h3 class="reviews-customers-name">Victoria Dobrzhanska</h3>
@@ -43,6 +45,8 @@
                   "
                   src="/img/reviews/reviews-1.png"
                   alt="foto customer"
+                  width="80"
+                  height="80"
                 />
               </div>
               <h3 class="reviews-customers-name">Nazar Babenko</h3>
@@ -66,6 +70,8 @@
                   "
                   src="/img/reviews/reviews-2.png"
                   alt="foto customer"
+                  width="80"
+                  height="80"
                 />
               </div>
               <h3 class="reviews-customers-name">Olena Kampusch</h3>
@@ -89,6 +95,8 @@
                   "
                   src="/img/reviews/reviews-3.png"
                   alt="foto customer"
+                  width="80"
+                  height="80"
                 />
               </div>
               <h3 class="reviews-customers-name">Natalia Sus</h3>
@@ -111,6 +119,8 @@
                   "
                   src="/img/reviews/reviews-4.png"
                   alt="foto customer"
+                  width="80"
+                  height="80"
                 />
               </div>
               <h3 class="reviews-customers-name">Danilo Nottingham</h3>
@@ -134,6 +144,8 @@
                   "
                   src="/img/reviews/reviews-5.png"
                   alt="foto customer"
+                  width="80"
+                  height="80"
                 />
               </div>
               <h3 class="reviews-customers-name">Irina Tydnyuk</h3>
@@ -150,18 +162,21 @@
         class="swiper-pagination reviews-swiper-pagination swiper-indent"
       ></div>
     </div>
+    <!-- Кнопка  Leave a review-->
 
-    <button class="reviews-btn" type="button">Leave a review</button>
+    <button class="reviews-btn" type="button" data-modal-review-open>
+      Leave a review
+    </button>
   </div>
 </section>
 
-<!-- modal-review -->
+<!-- modal-btm-review -->
 
-<div class="review-bakdrop">
+<div class="review-backdrop is-hidden" data-modal-review>
   <div class="review-modal">
-    <button class="review-close-btn" type="button" data-modal-close>
-      <svg class="modal-close-icon" width="24" height="24">
-        <use href="/img/sprite.svg#icon-button-close-modal-header"></use>
+    <button class="review-close-btn" type="button" data-modal-review-close>
+      <svg class="modal-close-icon" width="14" height="14">
+        <use href="/img/sprite.svg#icon-close-black-modal-buy"></use>
       </svg>
     </button>
     <h2 class="reviews-modal-heading">
@@ -179,6 +194,7 @@
           required
           minlength="3"
           maxlength="12"
+          autocomplete="off"
         />
       </label>
 
@@ -188,27 +204,39 @@
           type="email"
           placeholder="Enter your email"
           name="user_email"
+          autocomplete="off"
         />
       </label>
 
-      <label class="review-form-label">
+      <label
+        class="review-form-label tel-icon-flag reviews-input-phone-wrapper"
+        for="input-phone-number"
+      >
         <input
-          class="review-form-field"
+          class="review-form-field review-form-field-margin"
           placeholder="Phone number"
           type="tel"
+          maxlength="9"
+          minlength="9"
           name="user_phone"
-          required
+          autocomplete="off"
+          id="input-phone-number"
         />
+        <svg class="review-icon-flag" width="24" height="18">
+          <use href="/img/sprite.svg#icon-LeftIcon"></use>
+        </svg>
+        <span class="review-country-code">+380</span>
       </label>
-
-      <label class="form-label">
+      <label class="review-form-label">
         <textarea
-          class="form-comment form-field"
-          name="modal_comment"
+          class="review-form-client review-form-field"
+          name="client-review"
           rows="6"
           placeholder="Enter text"
+          autocomplete="off"
         ></textarea>
       </label>
+      <button class="client-send-review-btm" type="submit">Send</button>
     </form>
   </div>
 </div>
