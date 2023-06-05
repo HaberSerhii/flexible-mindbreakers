@@ -265,7 +265,6 @@
 
 .hero-button-list-item {
   display: flex;
-  width: 130px;
   height: 41px;
   border: 1px solid #ffffff;
   border-radius: 100px;
@@ -515,10 +514,16 @@
   justify-content: flex-end;
   align-items: center;
   transition: border 300ms;
+  cursor: pointer;
+  user-select: none;
 }
 
 .modal-buy-now-list-item:hover,
 .modal-buy-now-list-item:focus {
+  border: 1px solid #fd9222;
+}
+
+.selected-buy-now {
   border: 1px solid #fd9222;
 }
 

@@ -50,7 +50,7 @@
         ><span class="modal-buy-now-title-word">BUY </span>NOW</strong
       >
       <ul class="modal-buy-now-list list">
-        <li class="modal-buy-now-list-item">
+        <li id="item-first" class="modal-buy-now-list-item">
           <div class="modal-buy-now-list-item-img-and-text">
             <img
               srcset="
@@ -70,7 +70,7 @@
             </div>
           </div>
         </li>
-        <li class="modal-buy-now-list-item">
+        <li id="item-second" class="modal-buy-now-list-item">
           <div class="modal-buy-now-list-item-img-and-text">
             <img
               srcset="
@@ -89,7 +89,7 @@
             </div>
           </div>
         </li>
-        <li class="modal-buy-now-list-item">
+        <li id="item-third" class="modal-buy-now-list-item">
           <div class="modal-buy-now-list-item-img-and-text">
             <img
               srcset="
@@ -116,6 +116,7 @@
         >
         <div class="modal-buy-now-name-and-surname">
           <input
+            required
             type="text"
             name="personal-inf"
             class="form-buy-now-field-personal form-buy-now-field-personal-ns"
@@ -124,6 +125,7 @@
             autocomplete="off"
           />
           <input
+            required
             type="text"
             name="personal-inf"
             class="form-buy-now-field-personal form-buy-now-field-personal-ns"
@@ -136,6 +138,7 @@
           >Email</label
         >
         <input
+          required
           type="email"
           name="personal-email"
           class="form-buy-now-field-email form-buy-now-field-personal"
@@ -148,6 +151,7 @@
         >
         <div class="form-buy-now-field-phone-div">
           <input
+            required
             type="tel"
             maxlength="9"
             minlength="9"
@@ -167,6 +171,7 @@
         >
         <div class="form-buy-now-field-card-div">
           <input
+            required
             type="text"
             maxlength="16"
             minlength="16"
