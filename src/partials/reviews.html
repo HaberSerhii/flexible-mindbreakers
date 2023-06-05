@@ -3,46 +3,38 @@
     <h2 class="reviews-heading">
       <span class="reviews-text-color">Chocolate</span> is loved
     </h2>
-
-    <!-- Slider main container -->
-    <div class="swiper reviews-swiper">
-      <!-- Additional required wrapper -->
-
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <div class="reviews-wrapper">
-            <div class="reviews-card">
-              <div class="reviews-thumb">
-                <img
-                  srcset="
-                    /img/reviews/reviews.png    1x,
-                    /img/reviews/reviews@2x.png 2x
-                  "
-                  src="/img/reviews/reviews.png"
-                  alt="foto customer"
-                />
-              </div>
-              <h3 class="reviews-customers-name">Victoria Dobrzhanska</h3>
-              <p class="reviews-customers-feedback">
-                I love this chocolate bar. Perfect combination of light crispy
-                wafer, covered in a thin layer chocolate.
-              </p>
-            </div>
+    
+      <ul class="reviews-wrapper">
+        <li class="reviews-card ">
+          <div class="reviews-thumb">
+            <img
+              srcset="
+                /img/reviews/reviews.png    1x,
+                /img/reviews/reviews@2x.png 2x
+              "
+              src="/img/reviews/reviews.png"
+              alt="foto customer"
+              width="80"
+              height="80"
+            />
           </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="reviews-wrapper">
-            <div class="reviews-card">
-              <div class="reviews-thumb">
-                <img
+          <h3 class="reviews-customers-name">Victoria Dobrzhanska</h3>
+          <p class="reviews-customers-feedback">
+            I love this chocolate bar. Perfect combination of light crispy
+            wafer, covered in a thin layer chocolate.
+          </p>
+        </li>
+        <li class="reviews-card   hidden-card-mobil " >
+          <div class="reviews-thumb">
+            <img
                   srcset="
                     /img/reviews/reviews-1.png    1x,
                     /img/reviews/reviews@2x-1.png 2x
                   "
                   src="/img/reviews/reviews-1.png"
                   alt="foto customer"
+                  width="80"
+                  height="80"
                 />
               </div>
               <h3 class="reviews-customers-name">Nazar Babenko</h3>
@@ -51,21 +43,19 @@
                 light and crisp, the hazelnut cream is smooth, and the chocolate
                 is good.
               </p>
-            </div>
-          </div>
-        </div>
+        </li>
 
-        <div class="swiper-slide">
-          <div class="reviews-wrapper">
-            <div class="reviews-card">
-              <div class="reviews-thumb">
-                <img
+        <li class="reviews-card  hidden-tel-tablet" >
+          <div class="reviews-thumb">
+            <img
                   srcset="
                     /img/reviews/reviews-2.png    1x,
                     /img/reviews/reviews@2x-2.png 2x
                   "
                   src="/img/reviews/reviews-2.png"
                   alt="foto customer"
+                  width="80"
+                  height="80"
                 />
               </div>
               <h3 class="reviews-customers-name">Olena Kampusch</h3>
@@ -74,94 +64,24 @@
                 chocolate and the creaminess inside. The wafer is soft but
                 crunchy.
               </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="reviews-wrapper">
-            <div class="reviews-card">
-              <div class="reviews-thumb">
-                <img
-                  srcset="
-                    /img/reviews/reviews-3.png    1x,
-                    /img/reviews/reviews@2x-3.png 2x
-                  "
-                  src="/img/reviews/reviews-3.png"
-                  alt="foto customer"
-                />
-              </div>
-              <h3 class="reviews-customers-name">Natalia Sus</h3>
-              <p class="reviews-customers-feedback">
-                The chocolate assortment was delicious. Both dark and milk
-                chocolate pieces were smooth and just right on the sweetness
-                level.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="reviews-wrapper">
-            <div class="reviews-card">
-              <div class="reviews-thumb">
-                <img
-                  srcset="
-                    /img/reviews/reviews-4.png    1x,
-                    /img/reviews/reviews@2x-4.png 2x
-                  "
-                  src="/img/reviews/reviews-4.png"
-                  alt="foto customer"
-                />
-              </div>
-              <h3 class="reviews-customers-name">Danilo Nottingham</h3>
-              <p class="reviews-customers-feedback">
-                This is delicious. It so rich and flavorful you don’t need to
-                use as many. I love topping an apple with almond butter and
-                these chips for a snack.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="reviews-wrapper">
-            <div class="reviews-card">
-              <div class="reviews-thumb">
-                <img
-                  srcset="
-                    /img/reviews/reviews-5.png    1x,
-                    /img/reviews/reviews@2x-5.png 2x
-                  "
-                  src="/img/reviews/reviews-5.png"
-                  alt="foto customer"
-                />
-              </div>
-              <h3 class="reviews-customers-name">Irina Tydnyuk</h3>
-              <p class="reviews-customers-feedback">
-                This is simply the best chocolate around, and I'm just thrilled
-                to support a local company! Best local chocolate - world class
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- If we need pagination -->
-      <div
-        class="swiper-pagination reviews-swiper-pagination swiper-indent"
-      ></div>
+        </li>
+      </ul>
+      <button class="reviews-btn" type="button" data-modal-review-open>
+      Leave a review
+    </button>
+      
     </div>
-
-    <button class="reviews-btn" type="button">Leave a review</button>
+   
   </div>
 </section>
 
-<!-- modal-review -->
+<!-- modal-btm-review -->
 
-<div class="review-bakdrop">
+<div class="review-backdrop is-hidden" data-modal-review>
   <div class="review-modal">
-    <button class="review-close-btn" type="button" data-modal-close>
-      <svg class="modal-close-icon" width="24" height="24">
-        <use href="/img/sprite.svg#icon-button-close-modal-header"></use>
+    <button class="review-close-btn" type="button" data-modal-review-close>
+      <svg class="modal-close-icon" width="14" height="14">
+        <use href="/img/sprite.svg#icon-close-black-modal-buy"></use>
       </svg>
     </button>
     <h2 class="reviews-modal-heading">
@@ -179,6 +99,7 @@
           required
           minlength="3"
           maxlength="12"
+          autocomplete="off"
         />
       </label>
 
@@ -188,27 +109,39 @@
           type="email"
           placeholder="Enter your email"
           name="user_email"
+          autocomplete="off"
         />
       </label>
 
-      <label class="review-form-label">
+      <label
+        class="review-form-label tel-icon-flag reviews-input-phone-wrapper"
+        for="input-phone-number"
+      >
         <input
-          class="review-form-field"
+          class="review-form-field review-form-field-margin"
           placeholder="Phone number"
           type="tel"
+          maxlength="9"
+          minlength="9"
           name="user_phone"
-          required
+          autocomplete="off"
+          id="input-phone-number"
         />
+        <svg class="review-icon-flag" width="24" height="18">
+          <use href="/img/sprite.svg#icon-LeftIcon"></use>
+        </svg>
+        <span class="review-country-code">+380</span>
       </label>
-
-      <label class="form-label">
+      <label class="review-form-label">
         <textarea
-          class="form-comment form-field"
-          name="modal_comment"
+          class="review-form-client review-form-field"
+          name="client-review"
           rows="6"
           placeholder="Enter text"
+          autocomplete="off"
         ></textarea>
       </label>
+      <button class="client-send-review-btm" type="submit">Send</button>
     </form>
   </div>
 </div>
