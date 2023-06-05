@@ -38,16 +38,11 @@
   </div>
 </section>
 <!-- MODAL BUY NOW -->
-<div class="backdrop-modal-buy-now is-hidden" id="modal" data-modal>
+<div class="backdrop-modal-buy-now is-hidden" data-modal>
   <div class="modal-buy-now-cont">
     <div class="modal-buy-now-content">
       <button type="button" data-modal-close class="modal-buy-close-button">
-        <svg
-          class="modal-buy-close-icon"
-          width="12"
-          height="12"
-          id="modal-buy-close-icon"
-        >
+        <svg class="modal-buy-close-icon" width="12" height="12">
           <use href="/img/sprite.svg#icon-close-black-modal-buy"></use>
         </svg>
       </button>
@@ -116,7 +111,7 @@
       </ul>
 
       <form class="mobal-buy-now-form">
-        <label class="modal-buy-now-labels" for="personal-inf"
+        <label class="modal-buy-now-labels" for="personal-inf-second"
           >Personal information</label
         >
         <div class="modal-buy-now-name-and-surname">
@@ -124,7 +119,7 @@
             type="text"
             name="personal-inf"
             class="form-buy-now-field-personal form-buy-now-field-personal-ns"
-            id="personal-inf"
+            id="personal-inf-second"
             placeholder="Name"
             autocomplete="off"
           />
@@ -132,21 +127,23 @@
             type="text"
             name="personal-inf"
             class="form-buy-now-field-personal form-buy-now-field-personal-ns"
-            id="personal-inf-two"
+            id="personal-inf-two-second"
             placeholder="Surname"
             autocomplete="off"
           />
         </div>
-        <label class="modal-buy-now-labels" for="personal-email">Email</label>
+        <label class="modal-buy-now-labels" for="personal-email-second"
+          >Email</label
+        >
         <input
           type="email"
           name="personal-email"
           class="form-buy-now-field-email form-buy-now-field-personal"
-          id="personal-email"
+          id="personal-email-second"
           placeholder="Enter your email"
           autocomplete="off"
         />
-        <label class="modal-buy-now-labels" for="personal-tell"
+        <label class="modal-buy-now-labels" for="personal-tell-second"
           >Phone number</label
         >
         <div class="form-buy-now-field-phone-div">
@@ -156,7 +153,7 @@
             minlength="9"
             name="personal-tell"
             class="form-buy-now-field-phone form-buy-now-field-personal"
-            id="personal-tell"
+            id="personal-tell-second"
             placeholder="Phone number"
             autocomplete="off"
           />
@@ -165,7 +162,7 @@
           </svg>
           <p class="form-buy-now-field-phone-text-number">+380</p>
         </div>
-        <label class="modal-buy-now-labels" for="personal-card"
+        <label class="modal-buy-now-labels" for="personal-card-second"
           >Card number</label
         >
         <div class="form-buy-now-field-card-div">
@@ -175,7 +172,7 @@
             minlength="16"
             name="personal-card"
             class="form-buy-now-field-card form-buy-now-field-personal"
-            id="personal-card"
+            id="personal-card-second"
             placeholder="Enter card"
             autocomplete="off"
           />
@@ -183,11 +180,13 @@
             <use href="/img/sprite.svg#icon-Mastercard"></use>
           </svg>
         </div>
-        <label class="modal-buy-now-labels" for="client-comment">Comment</label>
+        <label class="modal-buy-now-labels" for="client-comment-second"
+          >Comment</label
+        >
         <textarea
           name="client-comment"
           class="form-buy-now-field-comment"
-          id="client-comment"
+          id="client-comment-second"
           placeholder="Enter text"
           autocomplete="off"
         ></textarea>
