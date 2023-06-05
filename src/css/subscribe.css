@@ -13,11 +13,6 @@
   background-position: center;
   margin: 0 auto;
   max-width: 1200px;
-
-  @media screen and (min-width: 768px) {
-    padding-top: 72px;
-    padding-bottom: 72px;
-  }
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -81,6 +76,13 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe-section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
+
 .subscribe-container {
   display: flex;
   flex-direction: column;
@@ -96,8 +98,10 @@
   text-align: center;
   letter-spacing: -0.03em;
   color: #ffffff;
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .subscribe-title {
     font-size: 24px;
     line-height: 1.17;
     max-width: 378px;
@@ -111,8 +115,10 @@
   line-height: 1.29;
   text-align: center;
   color: #ffffff;
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .subscribe-describe {
     max-width: 467px;
   }
 }
@@ -136,8 +142,10 @@
 
   transition: color 1s cubic-bezier(0.4, 0, 0.2, 1);
   /* background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) */
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .subscribe-btn {
     padding: 14px 40px;
     min-width: 172px;
     min-height: 50px;
@@ -321,7 +329,10 @@
   padding: 14px 22px;
   min-width: 100px;
   height: 45px;
-  @media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-submit-btn {
     padding: 18px 32px;
     min-width: 137px;
     height: 52px;
