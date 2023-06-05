@@ -5,3 +5,4 @@ import './js/slow-scroll';
 import './js/reviews';
 import './js/modal';
 import './js/anchor-scroll';
+import './js/modal-leave-review';
