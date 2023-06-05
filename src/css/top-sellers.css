@@ -62,6 +62,7 @@
 @media only screen and (min-width: 375px) {
   .top-sellers-img  {
     min-width: 335px;
+    min-height: 464px;
   }
 }
 
