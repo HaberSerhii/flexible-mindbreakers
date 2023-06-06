@@ -30,37 +30,29 @@
 .top-sellers-div {
 }
 .top-sellers-ul {
-  
+  margin-top: 32px;
 }
 @media only screen and (min-width: 768px) {
   .top-sellers-ul {
     display: flex;
     /*flex-wrap: wrap;*/
     column-gap: 16px;
+    margin-top: 50px;
   }
 }
 .sellers-heading {
- /* margin-bottom: 32px;*/
+  /* margin-bottom: 32px;*/
   color: var(--orange-color);
 }
 .sellers-span {
   color: var(--black-color);
 }
-.sellers-item {
- margin-top: 32px;
-}
-@media only screen and (min-width: 768px) {
-  .sellers-item {
-    margin-top: 50px;
-  }
-}
 
 .top-sellers-img {
- 
   border-radius: 15px;
 }
 @media only screen and (min-width: 375px) {
-  .top-sellers-img  {
+  .top-sellers-img {
     min-width: 335px;
     min-height: 464px;
   }
@@ -78,7 +70,8 @@
   }
 }
 
-.seller{}
+.seller {
+}
 
 @media only screen and (max-width: 1199px) {
   .seller {
@@ -86,27 +79,25 @@
   }
 }
 .sellers-text {
-
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.28;
-letter-spacing: -0.02em;
-color: #111111;
-margin-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: #111111;
+  margin-top: 20px;
 }
 @media only screen and (min-width: 375px) {
-  .sellers-text  {
+  .sellers-text {
     max-width: 306px;
   }
 }
 @media only screen and (min-width: 768px) {
   .sellers-text {
     display: none;
-    
   }
 }
-.div-sellers-text{
+.div-sellers-text {
   display: flex;
   margin-top: 20px;
 }
@@ -115,14 +106,14 @@ margin-top: 20px;
     margin-top: 32px;
   }
 }
-.sellers-text-tab{
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.28;
-letter-spacing: -0.02em;
-color: #111111;
-max-width: 306px;
+.sellers-text-tab {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: #111111;
+  max-width: 306px;
 }
 @media only screen and (max-width: 767px) {
   .sellers-text-tab {
@@ -131,7 +122,7 @@ max-width: 306px;
 }
 @media only screen and (min-width: 1200px) {
   .sellers-text-tab {
-    max-width: 407px; 
+    max-width: 407px;
   }
 }
 .sellers-button {
@@ -144,7 +135,6 @@ max-width: 306px;
 
   margin-left: auto;
   margin-right: auto;
-  
 
   font-style: normal;
   font-weight: 600;
@@ -177,19 +167,12 @@ max-width: 306px;
   transition: all 0.5s;
 }
 @media only screen and (min-width: 768px) {
-  .sellers-button  {
+  .sellers-button {
     margin-right: 0;
-  margin-top: 0;
-
+    margin-top: 0;
   }
 }
 .sellers-button:hover,
 .sellers-button:focus {
- 
   color: #fd9222;
- 
-
 }
-
-
-
