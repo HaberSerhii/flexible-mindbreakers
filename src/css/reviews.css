@@ -283,6 +283,10 @@
     top: 24px;
   }
 }
+.modal-close-icon {
+  fill: rgb(46, 47, 66);
+  transition: fill 300ms;
+}
 .review-close-btn:hover .modal-close-icon,
 .review-close-btn:focus .modal-close-icon {
   fill: #fd9222;
