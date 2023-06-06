@@ -78,7 +78,7 @@ footer {
 @media only screen and (min-width: 768px) {
   .footer-text:hover,
   .footer-text:focus {
-    transform: scale(1.3);
+    transform: scale(1.15);
   }
 }
 
@@ -86,14 +86,6 @@ footer {
   .footer-text {
     margin-bottom: 86px;
     margin-right: 543px;
-    transition: transform 1s;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .footer-text:hover,
-  .footer-text:focus {
-    transform: scale(1.15);
   }
 }
 
