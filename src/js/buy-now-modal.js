@@ -98,3 +98,4 @@ numericInp.addEventListener('input', function() {
   // Удаляем все нецифровые символы, оставляя только цифры
   this.value = this.value.replace(/\D/g, '');
 });
+
