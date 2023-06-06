@@ -27,8 +27,7 @@
     padding-bottom: 128px;
   }
 }
-.top-sellers-div {
-}
+
 .top-sellers-ul {
   margin-top: 32px;
 }
@@ -40,6 +39,23 @@
     margin-top: 50px;
   }
 }
+
+.sellers-item:first-child {
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .sellers-item:first-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sellers-item {
+    margin-bottom: 0px;
+  }
+}
+
 .sellers-heading {
   /* margin-bottom: 32px;*/
   color: var(--orange-color);
@@ -68,9 +84,6 @@
     min-width: 368px;
     min-height: 464px;
   }
-}
-
-.seller {
 }
 
 @media only screen and (max-width: 1199px) {
