@@ -297,16 +297,23 @@
   height: 45px;
 
   border: 1px solid rgba(17, 17, 17, 0.05);
-  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+
   background-color: var(--white-color);
   border-radius: 8px;
 
   transition: border 300ms;
 }
 .review-form-field:focus {
-  border: 1px solid rgb(253, 146, 34);
+  outline: 1px solid rgb(253, 146, 34);
 }
+.review-form-field::placeholder {
+  font-size: 14px;
+  line-height: 1.21;
 
+  letter-spacing: -0.02em;
+
+  color: #000000;
+}
 @media only screen and (min-width: 768px) {
   .review-form-field {
     width: 100%;
@@ -430,7 +437,7 @@
   padding: 14px 18px;
 
   border: 1px solid rgba(17, 17, 17, 0.05);
-  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+
   border-radius: 8px;
 
   resize: none;
@@ -451,7 +458,7 @@
 
   letter-spacing: -0.02em;
 
-  color: rgba(64, 64, 64, 0.3);
+  color: #000000;
 }
 @media only screen and (min-width: 768px) {
   .review-form-label {
