@@ -11,4 +11,12 @@
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
   }
+
+  const numericInput = document.getElementById('personal-tell-input');
+
+  // Добавляем обработчик события "input" для поля ввода
+  numericInput.addEventListener('input', function () {
+    // Удаляем все нецифровые символы, оставляя только цифры
+    this.value = this.value.replace(/\D/g, '');
+  });
 })();
